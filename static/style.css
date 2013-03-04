@@ -23,6 +23,11 @@ body {
     text-align: right;
 }
 
+#logo #avatar {
+    position: relative;
+    top: 10px;
+}
+
 #logo #tag {
     width: 450px;
     position: absolute;
@@ -173,4 +178,13 @@ body {
 
 #sections .section a:hover {
     text-decoration: underline;
+}
+
+#body {
+    width: 720px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
 }
