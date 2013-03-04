@@ -13,17 +13,101 @@ body {
 #header {
     position: relative;
     margin: auto;
-    width: 720px;
+    width: 850px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#icons {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#icons a img {
+    border: 0px;
+}
+
+#icons .icon {
+    position: absolute;
+    top: 400px;
+    opacity: 0.6;
+}
+
+#icons .icon:hover {
+    opacity: 1;
+}
+
+#icons .icon.github {
+    top: 90px;
+    right: 50px;
+    -webkit-transform: rotate(10deg);
+}
+
+#icons .icon.github:hover {
+    -webkit-transform: rotate(0deg);
+}
+
+#icons .icon.npm {
+    top: 145px;
+    right: 20px;
+    -webkit-transform: rotate(20deg);
+}
+
+#icons .icon.npm:hover {
+    -webkit-transform: rotate(10deg);
+}
+
+#icons .icon.gittip {
+    top: 80px;
+    right: -10px;
+    -webkit-transform: rotate(-15deg);
+}
+
+#icons .icon.gittip:hover {
+    -webkit-transform: rotate(5deg);
+}
+
+#icons .icon.twitter {
+    top: 140px;
+    right: 110px;
+    -webkit-transform: rotate(20deg);
+}
+
+#icons .icon.twitter:hover {
+    -webkit-transform: rotate(10deg);
+}
+
+#icons .icon.facebook {
+    top: 160px;
+    right: 75px;
+    -webkit-transform: rotate(-10deg);
+}
+
+#icons .icon.facebook:hover {
+    -webkit-transform: rotate(0deg);
+}
+
+#icons .icon.soundcloud {
+    top: 50px;
+    right: 65px;
+    -webkit-transform: rotate(-10deg);
+}
+
+#icons .icon.soundcloud:hover {
+    -webkit-transform: rotate(0deg);
 }
 
 #sections {
     display: inline-block;
-    width: 50px;
     margin-left: 10px;
     font-size: 20pt;
     
     position: absolute;
-    right: 30px;
+    right: 120px;
     top: 30px;
 }
 
@@ -32,13 +116,13 @@ body {
 }
 
 #sections .section.s0 {
-    -webkit-transform: rotate(-40deg) translate(-5px, -5px); 
+    -webkit-transform: rotate(-40deg) translate(-5px, -7px); 
     -moz-transform: rotate(-40deg) translate(-5px, -5px); 
     transform: rotate(-40deg) translate(-5px, -5px); 
 }
 
 #sections .section.s1 {
-    -webkit-transform: rotate(-15deg) translate(10px, 0px); 
+    -webkit-transform: rotate(-15deg) translate(10px, 5px); 
     -moz-transform: rotate(-15deg) translate(10px, 0px); 
     transform: rotate(-15deg) translate(10px, 0px); 
 }
@@ -50,7 +134,7 @@ body {
 }
 
 #sections .section.s3 {
-    -webkit-transform: rotate(15deg) translate(10px, 0px); 
+    -webkit-transform: rotate(15deg) translate(10px, -5px); 
     -moz-transform: rotate(15deg) translate(10px, 0px); 
     transform: rotate(15deg) translate(10px, 0px); 
 }
