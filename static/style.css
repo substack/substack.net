@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('electrolize'), url(electrolize.ttf) format('truetype');
+}
+
+body {
+    background-color: rgb(50,30,21);
+    font-family: 'electrolize', sans-serif;
+}
+
+#header {
+    position: relative;
+    margin: auto;
+    width: 720px;
+}
+
+#sections {
+    display: inline-block;
+    width: 50px;
+    margin-left: 10px;
+    font-size: 20pt;
+    
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+#sections .section.code {
+    font-size: 30pt;
+}
+
+#sections .section.s0 {
+    -webkit-transform: rotate(-40deg) translate(-5px, -5px); 
+    -moz-transform: rotate(-40deg) translate(-5px, -5px); 
+    transform: rotate(-40deg) translate(-5px, -5px); 
+}
+
+#sections .section.s1 {
+    -webkit-transform: rotate(-15deg) translate(10px, 0px); 
+    -moz-transform: rotate(-15deg) translate(10px, 0px); 
+    transform: rotate(-15deg) translate(10px, 0px); 
+}
+
+#sections .section.s2 {
+    -webkit-transform: rotate(3deg) translate(15px, 0px); 
+    -moz-transform: rotate(3deg) translate(15px, 0px); 
+    transform: rotate(3deg) translate(15px, 0px); 
+}
+
+#sections .section.s3 {
+    -webkit-transform: rotate(15deg) translate(10px, 0px); 
+    -moz-transform: rotate(15deg) translate(10px, 0px); 
+    transform: rotate(15deg) translate(10px, 0px); 
+}
+
+#sections .section a:link,
+#sections .section a:visited {
+    text-decoration: none;
+    color: rgb(200,230,255);
+}
+
+#sections .section a:hover {
+    text-decoration: underline;
+}
