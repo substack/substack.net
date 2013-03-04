@@ -13,7 +13,36 @@ body {
 #header {
     position: relative;
     margin: auto;
-    width: 850px;
+    width: 800px;
+}
+
+#logo {
+    position: relative;
+    display: inline-block;
+    width: 580px;
+    text-align: right;
+}
+
+#logo #tag {
+    width: 450px;
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    text-align: left;
+    color: red;
+    font-size: 24pt;
+}
+
+#logo #tag .unix {
+    color: red;
+}
+
+#logo #tag .beep-boop {
+    color: rgb(200,230,255);
+}
+
+#logo #letters {
+    margin-bottom: 60px;
 }
 
 #footer {
@@ -22,7 +51,8 @@ body {
 }
 
 #icons {
-    position: absolute;
+    display: inline-block;
+    width: 150px;
     top: 0px;
     right: 0px;
 }
@@ -34,11 +64,7 @@ body {
 #icons .icon {
     position: absolute;
     top: 400px;
-    opacity: 0.6;
-}
-
-#icons .icon:hover {
-    opacity: 1;
+    padding: 2px;
 }
 
 #icons .icon.github {
