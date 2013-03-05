@@ -210,6 +210,10 @@ body {
     transform: rotate(15deg) translate(10px, 0px); 
 }
 
+#sections .section a {
+    border-radius: 3px;
+}
+
 #sections .section a:link,
 #sections .section a:visited {
     text-decoration: none;
@@ -217,7 +221,14 @@ body {
 }
 
 #sections .section a:hover {
-    text-decoration: underline;
+    background-color: red;
+    color: white;
+}
+
+#sections .section.active a:link,
+#sections .section.active a:visited {
+    background-color: rgb(30,0,0);
+    color: white;
 }
 
 #content {

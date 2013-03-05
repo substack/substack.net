@@ -23,6 +23,13 @@ var showPage = singlePage(function (href) {
     });
     
     var name = href.replace(/^\//, '');
+    
+    var prev = document.querySelector('.section.active');
+    if (prev) prev.className = prev.className.replace(/\s*\bactive\b\s*/, '');
+    
+    var section = document.querySelector('.section.' + name);
+    if (section) section.className += ' active';
+    
     if (href === '/') show(pages.root)
     else if (pages[name]) show(pages[name])
 });
