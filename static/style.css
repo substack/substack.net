@@ -220,14 +220,17 @@ body {
     color: rgb(200,230,255);
 }
 
+#sections .section.active a:link,
+#sections .section.active a:visited {
+    color: red;
+}
+
 #sections .section a:hover {
     background-color: red;
     color: white;
 }
 
-#sections .section.active a:link,
-#sections .section.active a:visited {
-    background-color: rgb(30,0,0);
+#sections .section.active a:hover {
     color: white;
 }
 
