@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'electrolize';
-  font-style: normal;
-  font-weight: 400;
-  src: local('electrolize'), url(electrolize.ttf) format('truetype');
+    font-family: 'electrolize';
+    font-style: normal;
+    font-weight: 400;
+    src: local('electrolize'), url(electrolize.ttf) format('truetype');
 }
 
 body {
@@ -78,60 +78,84 @@ body {
     top: 85px;
     right: 50px;
     -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 #icons .icon.github:hover {
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 #icons .icon.npm {
     top: 145px;
     right: 20px;
     -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
 }
 
 #icons .icon.npm:hover {
     -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 #icons .icon.gittip {
     top: 80px;
     right: -13px;
     -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-15deg);
 }
 
 #icons .icon.gittip:hover {
     -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 #icons .icon.twitter {
     top: 140px;
     right: 110px;
     -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
 }
 
 #icons .icon.twitter:hover {
     -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 #icons .icon.facebook {
     top: 160px;
     right: 75px;
     -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
 
 #icons .icon.facebook:hover {
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 #icons .icon.soundcloud {
     top: 50px;
     right: 65px;
     -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
 
 #icons .icon.soundcloud:hover {
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 #sections {
