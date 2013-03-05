@@ -4,12 +4,12 @@ var fs = require('fs');
 var html = {
     root: fs.readFileSync(__dirname + '/html/root.html'),
     art: fs.readFileSync(__dirname + '/html/art.html'),
-    music: fs.readFileSync(__dirname + '/html/music.html')
+    music: fs.readFileSync(__dirname + '/html/music.html'),
+    'mad-science': fs.readFileSync(__dirname + '/html/mad_science.html')
 };
 
 var content = document.getElementById('content');
-var pageNames = [ 'root', 'art', 'music' ];
-var pages = pageNames.reduce(function (acc, key) {
+var pages = Object.keys(html).reduce(function (acc, key) {
     var elem = acc[key] = hyperglue(html[key]);
     hide(elem);
     content.appendChild(elem);
