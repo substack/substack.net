@@ -14,20 +14,19 @@ body {
     position: relative;
     margin: auto;
     width: 800px;
+    height: 192px;
     padding-bottom: 9px;
     border-bottom: 3px solid rgb(160,110,81);
 }
 
-#logo {
-    position: relative;
-    display: inline-block;
-    width: 580px;
-    text-align: right;
+#logo #avatar {
+    position: absolute;
+    top: 10px;
+    right: 210px;
 }
 
-#logo #avatar {
-    position: relative;
-    top: 10px;
+#logo #avatar:hover {
+    top: 12px;
 }
 
 #logo #tag {
@@ -49,7 +48,15 @@ body {
 }
 
 #logo #letters {
-    margin-bottom: 60px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#logo #tag {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
 }
 
 #footer {
