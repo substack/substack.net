@@ -73,7 +73,7 @@ body {
 }
 
 #icons .icon.github {
-    top: 90px;
+    top: 85px;
     right: 50px;
     -webkit-transform: rotate(10deg);
 }
@@ -94,7 +94,7 @@ body {
 
 #icons .icon.gittip {
     top: 80px;
-    right: -10px;
+    right: -13px;
     -webkit-transform: rotate(-15deg);
 }
 
@@ -180,11 +180,21 @@ body {
     text-decoration: underline;
 }
 
-#body {
-    width: 720px;
+#outer-body {
+    width: 740px;
     margin: auto;
+    padding: 5px;
+    margin-top: 8px;
+    border: 3px solid rgb(160,110,81);
+    border-radius: 15px;
+}
+
+#body {
     padding: 20px;
-    margin-top: 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(250,245,220);
+}
+
+#body .page {
+    display: none;
 }
