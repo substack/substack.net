@@ -14,6 +14,8 @@ body {
     position: relative;
     margin: auto;
     width: 800px;
+    padding-bottom: 9px;
+    border-bottom: 3px solid rgb(160,110,81);
 }
 
 #logo {
@@ -180,21 +182,9 @@ body {
     text-decoration: underline;
 }
 
-#outer-body {
+#content {
     width: 740px;
     margin: auto;
-    padding: 5px;
-    margin-top: 8px;
-    border: 3px solid rgb(160,110,81);
-    border-radius: 15px;
-}
-
-#body {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgb(250,245,220);
-}
-
-#body .page {
-    display: none;
+    margin-top: 20px;
+    color: white;
 }

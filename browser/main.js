@@ -2,18 +2,17 @@ var hyperglue = require('hyperglue');
 
 var fs = require('fs');
 var html = {
-    page: fs.readFileSync(__dirname + '/html/page.html'),
     root: fs.readFileSync(__dirname + '/html/root.html'),
     art: fs.readFileSync(__dirname + '/html/art.html'),
     music: fs.readFileSync(__dirname + '/html/music.html')
 };
 
-var body = document.getElementById('body');
+var content = document.getElementById('content');
 var pageNames = [ 'root', 'art', 'music' ];
 var pages = pageNames.reduce(function (acc, key) {
-    var elem = hyperglue(html.page, { '.page': { _html: html[key] } });
-    body.appendChild(elem);
-    acc[key] = elem;
+    var elem = acc[key] = hyperglue(html[key]);
+    hide(elem);
+    content.appendChild(elem);
     return acc;
 }, {});
 
