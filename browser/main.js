@@ -5,7 +5,8 @@ var html = {
     root: fs.readFileSync(__dirname + '/html/root.html'),
     art: fs.readFileSync(__dirname + '/html/art.html'),
     music: fs.readFileSync(__dirname + '/html/music.html'),
-    'mad-science': fs.readFileSync(__dirname + '/html/mad_science.html')
+    'mad-science': fs.readFileSync(__dirname + '/html/mad_science.html'),
+    me: fs.readFileSync(__dirname + '/html/me.html')
 };
 
 var avatar = document.getElementById('avatar');
