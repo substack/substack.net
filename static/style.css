@@ -183,6 +183,20 @@ body {
     transform: rotate(20deg);
 }
 
+#icons .icon.youtube {
+    top: 10px;
+    right: 55px;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+#icons .icon.youtube:hover {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
 #sections {
     display: inline-block;
     margin-left: 10px;
