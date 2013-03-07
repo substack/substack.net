@@ -1,9 +1,72 @@
+<style>
+  #mad-science {
+    width: 850px;
+    margin: auto;
+  }
+  
+  #mad-science .project .desc {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  #mad-science .project .month {
+    font-size: 1.2em;
+  }
+  
+  #mad-science .project.rov .year {
+    color: rgb(30,150,255);
+  }
+  
+  #mad-science .project.telescope .year {
+    color: rgb(30,255,220);
+  }
+  
+  #mad-science .project .year {
+    font-size: 3em;
+  }
+</style>
+
 <h1>mad science projects</h1>
 
-<div>
+<div class="project rov">
   <img src="/images/rov.png">
+  <div class="desc">
+    <div class="year">2010</div>
+    <div>
+      <span class="month">January</span>
+      through
+      <span class="month">July</span>
+    </div>
+    
+    <div>
+    I built an underwater ROV with some friends in Alaska for
+    <a href="http://www.marinetech.org/rov-competition/">a contest</a>
+    in Hawaii.
+    </div>
+    
+    <div>
+        <a href="http://www.youtube.com/watch?v=qtp4xpVjTg4"
+        ><img src="/images/youtube.png"></a>
+        <a href="https://github.com/substack/underwater-rov-2010"
+        ><img src="/images/github.png"></a>
+        <a href="http://substack.net/doc/rov-2010-tech-report.pdf">[pdf]</a>
+    </div>
+  </div>
 </div>
 
-<div>
+<div class="project telescope">
   <img src="/images/robot_telescope.png">
+  <div class="desc">
+    <span class="month">January</span>
+    <span class="year">2010</span>
+    
+    <a href="http://www.youtube.com/watch?v=ZmRET6z0XWg"
+    ><img src="/images/youtube.png"></a>
+    <a href="https://github.com/substack/telescope-controller"
+    ><img src="/images/github.png"></a>
+  </div>
 </div>
