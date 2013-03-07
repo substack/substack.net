@@ -1,14 +1,3 @@
-var hyperglue = require('hyperglue');
-
-var fs = require('fs');
-var html = {
-    root: fs.readFileSync(__dirname + '/html/root.html'),
-    art: fs.readFileSync(__dirname + '/html/art.html'),
-    music: fs.readFileSync(__dirname + '/html/music.html'),
-    'mad-science': fs.readFileSync(__dirname + '/html/mad_science.html'),
-    me: fs.readFileSync(__dirname + '/html/me.html')
-};
-
 var avatar = document.getElementById('avatar');
 avatar.addEventListener('mouseover', function (ev) {
     avatar.setAttribute('src', '/images/substack_angry.png');
@@ -17,13 +6,7 @@ avatar.addEventListener('mouseout', function (ev) {
     avatar.setAttribute('src', '/images/substack.png');
 });
 
-var content = document.getElementById('content');
-var pages = Object.keys(html).reduce(function (acc, key) {
-    var elem = acc[key] = hyperglue(html[key]);
-    hide(elem);
-    content.appendChild(elem);
-    return acc;
-}, {});
+var pages = [].slice.call(document.querySelectorAll('.page'));
 
 var singlePage = require('single-page');
 var showPage = singlePage(function (href) {
