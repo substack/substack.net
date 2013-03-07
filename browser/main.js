@@ -19,16 +19,15 @@ var showPage = singlePage(function (href) {
         hide(pages[key]);
     });
     
-    var name = href.replace(/^\//, '');
-    
     var prev = document.querySelector('.section.active');
     if (prev) prev.className = prev.className.replace(/\s*\bactive\b\s*/, '');
     
+    var name = href.replace(/^\//, '');
+    if (href === '/') return show(pages.root);
+    
     var section = document.querySelector('.section.' + name);
     if (section) section.className += ' active';
-    
-    if (href === '/') show(pages.root)
-    else if (pages[name]) show(pages[name])
+    if (pages[name]) show(pages[name])
 });
 
 var links = document.querySelectorAll('a[href]');
