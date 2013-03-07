@@ -15,8 +15,8 @@ body {
     margin: auto;
     width: 800px;
     height: 192px;
-    padding-bottom: 9px;
-    border-bottom: 3px solid rgb(160,110,81);
+    padding-bottom: 5px;
+    border-bottom: 8px solid rgb(160,110,81);
 }
 
 #logo #avatar {
@@ -62,10 +62,10 @@ body {
 #footer {
     text-align: center;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 50px;
     width: 800px;
-    border-top: 3px solid rgb(160,110,81);
+    border-top: 8px solid rgb(160,110,81);
 }
 
 #icons {
