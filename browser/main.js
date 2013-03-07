@@ -6,7 +6,12 @@ avatar.addEventListener('mouseout', function (ev) {
     avatar.setAttribute('src', '/images/substack.png');
 });
 
-var pages = [].slice.call(document.querySelectorAll('.page'));
+var pages = [].slice.call(document.querySelectorAll('.page'))
+    .reduce(function (acc, elem) {
+        acc[elem.getAttribute('id')] = elem;
+        return acc;
+    }, {})
+;
 
 var singlePage = require('single-page');
 var showPage = singlePage(function (href) {
