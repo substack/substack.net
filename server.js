@@ -22,7 +22,7 @@ var server = http.createServer(function (req, res) {
     var pages = [ 'root', 'art', 'mad-science', 'music', 'code', 'me' ];
     var streams = pages.reduce(function (acc, page) {
         var name = page.replace(/-/g, '_') + '.html';
-        var file = path.join(__dirname, 'static', 'html', name);
+        var file = path.join(__dirname, 'static', 'pages', name);
         acc['#' + page] = fs.createReadStream(file);
         return acc;
     }, {});
