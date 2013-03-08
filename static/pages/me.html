@@ -1,12 +1,61 @@
 <style>
-  #me .inner-bar {
-    width: 740px;
+  #me .bar {
+    width: 800px;
     margin: auto;
+  }
+  
+  #me .inner-bar {
+    background-color: rgb(50,50,50);
+    height: 180px;
+  }
+  
+  #me .blurb {
+    display: inline-block;
+    width: 435px;
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  #me .talks {
+    margin-top: 20px;
+  }
+  
+  #me .talks ul li {
+    background-image: url(/images/youtube.png);
+    background-position: 0px 0px;
+    margin-left: -30px;
+    padding-left: 50px;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    height: 29px;
+    list-style-type: none;
   }
 </style>
 
 <div class="bar">
   <div class="inner-bar">
     <img src="/images/self.jpg">
+    <div class="blurb">
+      Oh hello.
+      
+      UNIX.
+      
+      Decentralized, iterative decisionmaking.
+    </div>
+  </div>
+  
+  <div class="talks">
+    Watch my public performances:
+    <ul>
+      <li><a href="http://www.youtube.com/watch?v=lQAV3bPOYHo"
+      >Harnessing Streams [Lisbon 2012]</a></li>
+      
+      <li><a href="http://www.youtube.com/watch?v=ZI2whsVNAz4"
+      >Enabling Chaos [Philadelphia 2012]</a></li>
+      
+      <li><a href="http://www.youtube.com/watch?v=zgt-jNqbxF8"
+      >Code Collage [Berlin 2012]</a></li>
+    </ul>
   </div>
 </div>

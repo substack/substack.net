@@ -281,4 +281,9 @@ body {
 #content a:link,
 #content a:visited {
     color: rgb(40,200,255);
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: underline;
 }
