@@ -9,6 +9,28 @@
     margin-bottom: 20px;
   }
   
+  #root .article.summary .body {
+    max-height: 150px;
+    overflow: hidden;
+  }
+  
+  #root .article.summary {
+    cursor: pointer;
+  }
+  
+  #root .article.summary .fade {
+    display: block;
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 5px;
+    right: 5px;
+    
+    background-image: -webkit-linear-gradient(bottom,rgba(69,44,28,1.0),rgba(69,44,28,0));
+    background-image: -moz-linear-gradient(bottom,rgba(69,44,28,1.0),rgba(69,44,28,0));
+    background-image: linear-gradient(to top,rgba(69,44,28,1.0),rgba(69,44,28,0));
+  }
+  
   #root .article .label {
     display: inline-block;
     width: 10ex;

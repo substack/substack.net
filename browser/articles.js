@@ -56,7 +56,15 @@ Articles.prototype.showAll = function () {
     
     var titles = Object.keys(self.elements);
     titles.forEach(function (t) {
-        vis.show(self.elements[t]);
+        var elem = self.elements[t];
+        elem.className += ' summary';
+        elem.addEventListener('click', function (ev) {
+            if (!/\bsummary\b/.test(elem.className)) return;
+            ev.preventDefault();
+            self.emit('show', t);
+        });
+        
+        vis.show(elem);
     });
 };
 
@@ -71,7 +79,9 @@ Articles.prototype.show = function (title) {
         vis.hide(self.elements[t]);
     });
     
-    vis.show(self.elements[title.replace(/\W+/g, '_')]);
+    var elem = self.elements[title.replace(/\W+/g, '_')];
+    elem.className = elem.className.replace(/\s*\bsummary\b\s*/g, '');
+    vis.show(elem);
 };
 
 Articles.prototype.appendTo = function (target) {

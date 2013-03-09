@@ -60,3 +60,5 @@ articles.on('link', function (link, href) {
         showPage(href);
     });
 });
+
+articles.on('show', showPage);
