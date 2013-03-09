@@ -1,3 +1,8 @@
+var articles = require('./articles')();
+articles.appendTo('#root');
+
+var vis = require('./vis');
+
 var avatar = document.getElementById('avatar');
 avatar.addEventListener('mouseover', function (ev) {
     avatar.setAttribute('src', '/images/substack_angry.png');
@@ -16,18 +21,26 @@ var pages = [].slice.call(document.querySelectorAll('.page'))
 var singlePage = require('single-page');
 var showPage = singlePage(function (href) {
     Object.keys(pages).forEach(function (key) {
-        hide(pages[key]);
+        vis.hide(pages[key]);
     });
     
     var prev = document.querySelector('.section.active');
     if (prev) prev.className = prev.className.replace(/\s*\bactive\b\s*/, '');
     
     var name = href.replace(/^\//, '');
-    if (href === '/') return show(pages.root);
+    if (href === '/') {
+        vis.show(pages.root);
+        return articles.showAll();
+    }
     
     var section = document.querySelector('.section.' + name);
     if (section) section.className += ' active';
-    if (pages[name]) show(pages[name])
+    
+    if (pages[name]) vis.show(pages[name])
+    else {
+        vis.show(pages.root);
+        articles.show(name);
+    }
 });
 
 var links = document.querySelectorAll('a[href]');
@@ -40,6 +53,3 @@ for (var i = 0; i < links.length; i++) (function (link) {
         });
     }
 })(links[i]);
-
-function hide (e) { e.style.display = 'none' }
-function show (e) { e.style.display = 'block' }
