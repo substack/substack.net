@@ -53,3 +53,10 @@ for (var i = 0; i < links.length; i++) (function (link) {
         });
     }
 })(links[i]);
+
+articles.on('link', function (link, href) {
+    link.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        showPage(href);
+    });
+});

@@ -25,14 +25,20 @@ function Articles (uri) {
     parser.pipe(through(write, end));
     
     function write (row) {
+        var title = row.title.replace(/\W+/g, '_');
         var elem = hyperglue(html, {
-            '.title': row.title,
+            '.title': (function () {
+                var link = document.createElement('a');
+                link.setAttribute('href', '/' + title);
+                link.appendChild(document.createTextNode(row.title));
+                self.emit('link', link, '/' + title);
+                return link;
+            })(),
             '.commit': row.commit,
             '.author': row.author,
             '.date': row.date,
             '.body': { _html: row.body },
         });
-        var title = row.title.replace(/\W+/g, '_');
         self.elements[title] = elem;
     }
     
