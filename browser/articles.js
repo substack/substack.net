@@ -50,20 +50,26 @@ function Articles (uri) {
 
 inherits(Articles, EventEmitter);
 
-Articles.prototype.showAll = function () {
+Articles.prototype.showAll = function (opts) {
     var self = this;
-    if (self.loading) return self.on('ready', self.showAll);
+    if (!opts) opts = {};
+    if (opts.summary === undefined) opts.summary = true;
+    
+    if (self.loading) {
+        return self.on('ready', function () { self.showAll(opts) });
+    }
     
     var titles = Object.keys(self.elements);
     titles.forEach(function (t) {
         var elem = self.elements[t];
-        elem.className += ' summary';
-        elem.addEventListener('click', function (ev) {
-            if (!/\bsummary\b/.test(elem.className)) return;
-            ev.preventDefault();
-            self.emit('show', t);
-        });
-        
+        if (opts.summary) {
+            elem.className += ' summary';
+            elem.addEventListener('click', function (ev) {
+                if (!/\bsummary\b/.test(elem.className)) return;
+                ev.preventDefault();
+                self.emit('show', t);
+            });
+        }
         vis.show(elem);
     });
 };
