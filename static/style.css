@@ -16,7 +16,7 @@ body {
     width: 800px;
     height: 192px;
     padding-bottom: 5px;
-    border-bottom: 8px solid rgb(160,110,81);
+    border-bottom: 8px solid rgba(255,185,105,0.25) ;
 }
 
 #logo #avatar {
@@ -65,7 +65,7 @@ body {
     margin-top: 20px;
     padding-top: 50px;
     width: 800px;
-    border-top: 8px solid rgb(160,110,81);
+    border-top: 8px solid rgba(255,185,105,0.25);
 }
 
 #icons {
