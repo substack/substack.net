@@ -26,7 +26,11 @@ function Articles (uri) {
     
     function write (row) {
         var elem = hyperglue(html, {
-            '.body': { _html: row.body }
+            '.title': row.title,
+            '.commit': row.commit,
+            '.author': row.author,
+            '.date': row.date,
+            '.body': { _html: row.body },
         });
         var title = row.title.replace(/\W+/g, '_');
         self.elements[title] = elem;

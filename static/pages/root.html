@@ -3,4 +3,54 @@
     width: 740px;
     margin: auto;
   }
+  
+  #root .article {
+    position: relative;
+  }
+  
+  #root .article .label {
+    display: inline-block;
+    width: 10ex;
+  }
+  
+  #root .article .line {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  #root .article .title {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+    padding-left: 15px;
+    width: 680px;
+    height: 30px;
+  }
+
+  #root .article .title-corner {
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-left: 40px solid red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  
+  #root .article .header {
+    background-color: rgba(255,185,105,0.25);
+  }
+  
+  #root .article .body {
+    background-color: rgba(255,185,105,0.1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
 </style>
