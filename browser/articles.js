@@ -62,6 +62,7 @@ Articles.prototype.showAll = function (opts) {
     var self = this;
     if (!opts) opts = {};
     if (opts.summary === undefined) opts.summary = true;
+    self.emit('showing', undefined);
     
     if (self.loading) {
         return self.on('ready', function () { self.showAll(opts) });
@@ -84,12 +85,19 @@ Articles.prototype.showAll = function (opts) {
 
 Articles.prototype.show = function (title) {
     var self = this;
+    self.emit('showing', title);
+    
     if (self.loading) {
-        return self.on('loaded', function onload (t) {
+        var onload = function (t) {
             if (t !== title) return vis.hide(self.elements[t]);
             self.removeListener('loaded', onload);
             self.show(title);
+        };
+        self.on('loaded', onload);
+        self.once('showing', function () {
+            self.removeListener('loaded', onload);
         });
+        return;
     }
     
     var titles = Object.keys(self.elements);
