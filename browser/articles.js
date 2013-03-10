@@ -39,12 +39,19 @@ function Articles (uri) {
             '.date': row.date,
             '.body': { _html: row.body },
         });
+        addLinks(elem);
         self.elements[title] = elem;
     }
     
     function end () {
         self.loading = false;
         self.emit('ready');
+        
+        if (window.location.hash) {
+            var h = window.location.hash;
+            window.location.hash = '';
+            window.location.hash = h;
+        }
     }
 };
 
@@ -102,3 +109,23 @@ Articles.prototype.appendTo = function (target) {
         target.appendChild(self.elements[t]);
     });
 };
+
+function addLinks (elem) {
+    var body = elem.querySelector('.body');
+    var anchors = {};
+    var nodes = [].slice.call(body.childNodes);
+    nodes.forEach(function (node) {
+        var tag = String(node.tagName).toLowerCase();
+        if (/^h\d+/.test(tag)) {
+            var name = node.textContent.replace(/\W+/g, '-');
+            if (anchors[name]) name = name.replace(/\d*$/, function (x) {
+                return Number(x) + 1;
+            });
+            var anchor = document.createElement('a');
+            anchor.setAttribute('name', name);
+            anchor.setAttribute('id', 'article-anchor-' + name);
+            anchors[name] = anchor;
+            body.insertBefore(anchor, node);
+        }
+    });
+}
