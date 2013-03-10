@@ -41,17 +41,18 @@ function Articles (uri) {
         });
         addLinks(elem);
         self.elements[title] = elem;
-    }
-    
-    function end () {
-        self.loading = false;
-        self.emit('ready');
+        self.emit('loaded', title);
         
         if (window.location.hash) {
             var h = window.location.hash;
             window.location.hash = '';
             window.location.hash = h;
         }
+    }
+    
+    function end () {
+        self.loading = false;
+        self.emit('ready');
     }
 };
 
@@ -84,7 +85,11 @@ Articles.prototype.showAll = function (opts) {
 Articles.prototype.show = function (title) {
     var self = this;
     if (self.loading) {
-        return self.on('ready', function () { self.show(title) });
+        return self.on('loaded', function onload (t) {
+            if (t !== title) return vis.hide(self.elements[t]);
+            self.removeListener('loaded', onload);
+            self.show(title);
+        });
     }
     
     var titles = Object.keys(self.elements);
@@ -99,10 +104,13 @@ Articles.prototype.show = function (title) {
 
 Articles.prototype.appendTo = function (target) {
     var self = this;
-    if (self.loading) {
-        return self.on('ready', function () { self.appendTo(target) });
-    }
     if (typeof target === 'string') target = document.querySelector(target);
+    
+    if (self.loading) {
+        self.on('loaded', function (t) {
+            target.appendChild(self.elements[t]);
+        });
+    }
     
     var titles = Object.keys(self.elements);
     titles.forEach(function (t) {
