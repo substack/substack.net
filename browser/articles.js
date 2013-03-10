@@ -132,20 +132,29 @@ function addLinks (elem) {
     var nodes = [].slice.call(body.childNodes);
     nodes.forEach(function (node) {
         var tag = String(node.tagName).toLowerCase();
-        if (/^h\d+/.test(tag)) {
-            var name = node.textContent.replace(/\W+/g, '-');
+        if (/^h\d+/.test(tag) || tag === 'pre') {
+            var name = tag === 'pre'
+                ? '_code0'
+                : node.textContent.replace(/\W+/g, '-')
+            ;
             if (anchors[name]) name = name.replace(/\d*$/, function (x) {
                 return Number(x) + 1;
             });
             var anchor = document.createElement('a');
             anchor.setAttribute('name', name);
-            anchor.setAttribute('id', 'article-anchor-' + name);
             anchor.setAttribute('href', '#' + name);
             anchors[name] = anchor;
             
             body.insertBefore(anchor, node);
-            body.removeChild(node);
-            anchor.appendChild(node);
+            if (tag === 'pre') {
+                anchor.setAttribute('class', 'article-code-anchor');
+                anchor.appendChild(document.createTextNode('code link'));
+            }
+            else {
+                anchor.setAttribute('class', 'article-anchor');
+                body.removeChild(node);
+                anchor.appendChild(node);
+            }
         }
     });
 }
