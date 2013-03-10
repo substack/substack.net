@@ -44,7 +44,7 @@ body {
 }
 
 #logo #tag .beep-boop {
-    color: rgb(200,230,255);
+    color: rgb(190,142,102);
 }
 
 #logo #letters {
@@ -256,7 +256,7 @@ body {
 #sections .section a:link,
 #sections .section a:visited {
     text-decoration: none;
-    color: rgb(200,230,255);
+    color: rgb(190,142,102);
 }
 
 #sections .section.active a:link,
