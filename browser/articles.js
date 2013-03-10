@@ -97,7 +97,6 @@ Articles.prototype.show = function (title) {
         self.once('showing', function () {
             self.removeListener('loaded', onload);
         });
-        return;
     }
     
     var titles = Object.keys(self.elements);
@@ -106,6 +105,7 @@ Articles.prototype.show = function (title) {
     });
     
     var elem = self.elements[title.replace(/\W+/g, '_')];
+    if (!elem) return;
     elem.className = elem.className.replace(/\s*\bsummary\b\s*/g, '');
     vis.show(elem);
 };
@@ -140,8 +140,12 @@ function addLinks (elem) {
             var anchor = document.createElement('a');
             anchor.setAttribute('name', name);
             anchor.setAttribute('id', 'article-anchor-' + name);
+            anchor.setAttribute('href', '#' + name);
             anchors[name] = anchor;
+            
             body.insertBefore(anchor, node);
+            body.removeChild(node);
+            anchor.appendChild(node);
         }
     });
 }
