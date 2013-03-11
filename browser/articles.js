@@ -152,8 +152,12 @@ function addLinks (elem) {
             }
             else {
                 anchor.setAttribute('class', 'article-anchor');
-                body.removeChild(node);
-                anchor.appendChild(node);
+                var cnodes = [].slice.call(node.childNodes);
+                cnodes.forEach(function (cn) {
+                    node.removeChild(cn);
+                    anchor.appendChild(cn);
+                });
+                node.appendChild(anchor);
             }
         }
     });
