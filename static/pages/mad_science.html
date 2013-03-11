@@ -16,18 +16,19 @@
   #mad-science .project .desc {
     display: inline-block;
     vertical-align: top;
-    margin-top: 20px;
     margin-left: 10px;
+    margin-top: -10px;
     height: 300px;
     width: 300px;
   }
   
-  #mad-science .project.telescope .desc {
-    margin-top: 40px;
+  #mad-science .project.rov .desc {
+    margin-top: 30px;
+    margin-bottom: -30px;
   }
   
-  #mad-science .project.mars .desc {
-    margin-top: -10px;
+  #mad-science .project.telescope .desc {
+    margin-top: 40px;
   }
   
   #mad-science .project .desc .range {
@@ -54,6 +55,13 @@
   }
   #mad-science .project.telescope .range {
     color: rgb(50,255,240);
+  }
+  
+  #mad-science .project.copter .year {
+    color: rgb(180,125,61);
+  }
+  #mad-science .project.copter .range {
+    color: rgb(140,100,50);
   }
   
   #mad-science .project.mars .year {
@@ -83,15 +91,37 @@
 
 <h1>mad science projects</h1>
 
-<div class="project virus-copter">
-  <img>
+<div class="project copter">
+  <img src="/images/copter.png">
   <div class="desc">
     <div class="year">2012</div>
     <div class="range">
+      <span class="month">October</span>
+      and
       <span class="month">December</span>
     </div>
     <div>
-      virus copter
+      In October, I wrote a
+      <a href="https://github.com/substack/matador-copter"
+      >bullfighting copter</a> in
+      <a href="http://nodecopter.com/2012/berlin/oct-5">Berlin</a>
+      with
+      <a href="http://github.com/dominictarr">dominictarr</a>.
+      
+      In December I hacked together a
+      <a href="https://github.com/substack/virus-copter">virus</a>
+      to infect AR drones that didn't work very well but it won a prize.
+    </div>
+    
+    <div>
+      <a href="http://spectrum.ieee.org/automaton/robotics/diy/ar-drone-that-infects-other-drones-with-virus-wins-dronegames"
+      ><img src="/images/ieee.png"></a>
+      <a href="http://boingboing.net/2012/12/09/flying-malware-the-virus-copt.html"
+      ><img src="/images/bb.png"></a>
+      <a href="https://github.com/substack/virus-copter"
+      ><img src="/images/github.png"></a>
+      <a href="https://github.com/substack/matador-copter"
+      ><img src="/images/github.png"></a>
     </div>
   </div>
 </div>
