@@ -18,6 +18,7 @@ module.exports = function () {
 function Articles (uri) {
     var self = this;
     self.elements = {};
+    self.rows = [];
     self.loading = true;
     
     var hq = hyperquest(uri);
@@ -40,6 +41,13 @@ function Articles (uri) {
             '.body': { _html: row.body },
         });
         addLinks(elem);
+        
+        var rec = { title: title, date: (new Date(row.date)).valueOf() };
+        for (var i = 0; i < self.rows.length; i++) {
+            if (self.rows[i].date < rec.date) break;
+        }
+        self.rows.splice(i, 0, rec);
+        
         self.elements[title] = elem;
         self.emit('loaded', title);
         
@@ -113,17 +121,28 @@ Articles.prototype.show = function (title) {
 Articles.prototype.appendTo = function (target) {
     var self = this;
     if (typeof target === 'string') target = document.querySelector(target);
+    if (self.loading) self.on('loaded', insert);
+    Object.keys(self.elements).forEach(insert);
     
-    if (self.loading) {
-        self.on('loaded', function (t) {
+    function insert (t) {
+        var ix = indexOf(t);
+        if (self.rows[ix+1]) {
+            target.insertBefore(
+                self.elements[t],
+                self.elements[self.rows[ix+1].title]
+            );
+        }
+        else {
             target.appendChild(self.elements[t]);
-        });
+        }
     }
     
-    var titles = Object.keys(self.elements);
-    titles.forEach(function (t) {
-        target.appendChild(self.elements[t]);
-    });
+    function indexOf (t) {
+        for (var i = 0; i < self.rows.length; i++) {
+            if (self.rows[i].title === t) return i;
+        }
+        return -1;
+    }
 };
 
 function addLinks (elem) {
