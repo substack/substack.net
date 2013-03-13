@@ -5,12 +5,15 @@ var fs = require('fs');
 var path = require('path');
 
 var glog = require('glog')(process.argv[3]);
-var ecstatic = require('ecstatic')(__dirname + '/static');
+var ecstatic = require('ecstatic')({
+    root: __dirname + '/static',
+    showDir: true
+});
 
 var server = http.createServer(function (req, res) {
     if (glog.test(req.url)) return glog(req, res);
     
-    if (!/^\/[^\.\/]*$/.test(req.url)) {
+    if (!/^\/[^\.\/]*$/.test(req.url) || RegExp('^/images\\b').test(req.url)) {
         return ecstatic(req, res);
     }
     
