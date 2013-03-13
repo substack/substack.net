@@ -6,6 +6,8 @@ module.exports = function () { return new Art };
 function Art () {
     var self = this;
     self.root = document.createElement('div');
+    self.root.className = 'list';
+    
     self.element = document.createElement('div');
     self.root.appendChild(self.element);
     
