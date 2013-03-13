@@ -287,3 +287,27 @@ body {
 #content a:hover {
     text-decoration: underline;
 }
+
+.box {
+    position: relative;
+}
+
+.box .top-corner {
+    width: 0px;
+    height: 0px;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid rgb(50,30,21);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.box .bottom-corner {
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-left: 40px solid rgb(50,30,21);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
