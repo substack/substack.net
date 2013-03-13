@@ -3,18 +3,101 @@
     width: 740px;
     margin: auto;
   }
+  #code .intro {
+     width: 740px;
+     margin: auto;
+  }
+  
+  #code .project {
+    position: relative;
+    width: 800px;
+    height: 170px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgb(92,62,37);
+  }
+  
+  #code .project:hover {
+    background-color: rgb(122,75,47);
+  }
+  
+  #code a:link,
+  #code a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #code .top-corner {
+    width: 0px;
+    height: 0px;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid rgb(50,30,21);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  
+  #code .bottom-corner {
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-left: 40px solid rgb(50,30,21);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  #code .logo {
+    display: inline-block;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: -40px;
+  }
+  
+  #code .desc {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    padding-top: 30px;
+    margin-left: 20px;
+  }
+  
+  #code .code {
+    font-family: monospace;
+    color: rgb(90,140,230);
+  }
 </style>
-
-<div>
-I have <a href="https://npmjs.org/~substack"
->over 200 modules on npm</a>
-and <a href="https://github.com/substack?tab=repositories"
->over 400 projects on github</a>.
+ 
+<div class="intro">
+  I have <a href="https://npmjs.org/~substack"
+  >over 200 modules on npm</a>
+  and <a href="https://github.com/substack?tab=repositories"
+  >over 400 projects on github</a>.
+  Most of these are just tiny things that solve some narrow problem
+  along the long tail but these ones are particularly noteworthy:
 </div>
+ 
+<a href="http://browserify.org"
+><div class="project">
+  <div class="top-corner"></div>
+  <div class="logo">
+    <img src="/images/browserify.png">
+  </div>
+  <div class="desc">
+    Use node-style <span class="code">require()</span> calls to load scripts and
+    npm modules in the browser.
+  </div>
+  <div class="bottom-corner"></div>
+</div></a>
 
-<div>
-Here are some of my more popular projects:
-</div>
-
-<div>
-</div>
+<a href="https://github.com/substack/dnode"
+><div class="project">
+  <div class="top-corner"></div>
+  <div class="logo">
+    <img src="/images/dnode.png">
+  </div>
+  <div class="desc">
+    Freestyle rpc. It's callbacks all the way down!
+  </div>
+  <div class="bottom-corner"></div>
+</div></a>
