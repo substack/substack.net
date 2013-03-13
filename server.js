@@ -13,6 +13,15 @@ var ecstatic = require('ecstatic')({
 var server = http.createServer(function (req, res) {
     if (glog.test(req.url)) return glog(req, res);
     
+    if (req.url === '/images.json') {
+        var imgdir = path.join(__dirname, 'static', 'images');
+        return fs.readdir(imgdir, function (err, files) {
+            if (err) return res.end(err + '\n');
+            res.setHeader('content-type', 'application/json');
+            res.end(JSON.stringify(files));
+        });
+    }
+    
     if (!/^\/[^\.\/]*$/.test(req.url) || RegExp('^/images\\b').test(req.url)) {
         return ecstatic(req, res);
     }
