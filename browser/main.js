@@ -1,6 +1,9 @@
 var articles = require('./articles')();
 articles.appendTo('#root');
 
+var art = require('./art')();
+art.appendTo('#art');
+
 var vis = require('./vis');
 
 var avatar = document.getElementById('avatar');
@@ -28,6 +31,7 @@ var showPage = singlePage(function (href) {
     if (prev) prev.className = prev.className.replace(/\s*\bactive\b\s*/, '');
     
     var name = href.replace(/^\//, '');
+    
     if (href === '/') {
         vis.show(pages.root);
         return articles.showAll();
