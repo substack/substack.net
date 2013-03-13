@@ -48,6 +48,7 @@ for (var i = 0; i < links.length; i++) (function (link) {
     var href = link.getAttribute('href');
     if (RegExp('^/').test(href)) {
         link.addEventListener('click', function (ev) {
+            if (ev.ctrlKey) return;
             ev.preventDefault();
             showPage(href);
         });
