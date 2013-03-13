@@ -8,7 +8,7 @@
      margin: auto;
   }
   
-  #code .project {
+  #code .project > div {
     position: relative;
     width: 800px;
     height: 170px;
@@ -17,12 +17,12 @@
     background-color: rgb(92,62,37);
   }
   
-  #code .project:hover {
+  #code .project > div:hover {
     background-color: rgb(122,75,47);
   }
   
-  #code a:link,
-  #code a:visited {
+  #code a.project:link,
+  #code a.project:visited {
     text-decoration: none;
     color: white;
   }
@@ -77,8 +77,8 @@
   along the long tail but these ones are particularly noteworthy:
 </div>
  
-<a href="http://browserify.org"
-><div class="project">
+<a class="project" href="http://browserify.org"
+><div>
   <div class="top-corner"></div>
   <div class="logo">
     <img src="/images/browserify.png">
@@ -90,8 +90,8 @@
   <div class="bottom-corner"></div>
 </div></a>
 
-<a href="https://github.com/substack/dnode"
-><div class="project">
+<a class="project" href="https://github.com/substack/dnode"
+><div>
   <div class="top-corner"></div>
   <div class="logo">
     <img src="/images/dnode.png">
