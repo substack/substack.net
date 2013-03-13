@@ -7,7 +7,8 @@ var path = require('path');
 var glog = require('glog')(process.argv[3]);
 var ecstatic = require('ecstatic')({
     root: __dirname + '/static',
-    showDir: true
+    showDir: true,
+    gzip: true
 });
 
 var server = http.createServer(function (req, res) {

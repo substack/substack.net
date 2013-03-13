@@ -15,6 +15,7 @@
     "deck": "~0.0.4"
   },
   "scripts": {
-    "bundle": "browserify -t brfs browser/main.js -o static/bundle.js --debug"
+    "bundle": "browserify -t brfs browser/main.js | uglifyjs | gzip > static/bundle.js.gz",
+    "dev": "browserify -t brfs browser/main.js -o static/bundle.js.gz --debug"
   }
 }
