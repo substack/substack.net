@@ -42,14 +42,31 @@
     margin-left: 80px;
   }
   
-  #me .contact {
+  #me .info {
+    position: relative;
+  }
+  
+  #me .blurb table {
+    margin-left: 50px;
+  }
+  
+  #me .blurb table th {
+    text-align: left;
+    padding-right: 15px;
+    color: rgb(255,200,200);
+  }
+  
+  #me .blurb table td {
+    color: rgb(255,100,100);
     text-align: right;
   }
   
-  #me .contact .email {
-    margin-left: 15px;
+  #me .blurb table td.email {
     font-size: 2em;
-    color: rgb(255,100,100);
+  }
+  
+  #me .blurb table td.bitcoin {
+    font-size: 0.8em;
   }
   
   #me .box {
@@ -68,17 +85,19 @@
     <div class="blurb">
       <div>
       I like tiny programs that do one thing well and one thing only.
+      Which hypothetical reusable modules would make the task at hand trivial?
       </div>
       
-      <div>
-      I think about problems from the bottom-up: which reusable abstractions
-      need to exist in order to make the task at hand trivial?
-      </div>
-      
-      <div class="contact">
-      electronic mail:
-      <span class="email">mail@substack.net</span>
-      </div>
+      <table>
+        <tr>
+          <th>e-mail</th>
+          <td class="email">mail@substack.net</div>
+        </tr>
+        <tr>
+          <th>bitcoin</th>
+          <td class="bitcoin">196A7czbZum2nKNNwhHDeFcaGdacxPwfPB</td>
+        </tr>
+      </table>
     </div>
   </div>
   
@@ -104,6 +123,7 @@
     If you would like to help subsidize my mad science research projects,
     <a href="https://www.gittip.com/substack/">gittip donations</a>
     are greatly appreciated!
+    I also accept bitcoin.
     
     <div class="bottom-corner"></div>
   </div>
