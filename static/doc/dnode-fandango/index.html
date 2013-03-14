@@ -1,0 +1,123 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+var files = [
+    "000_fandango.png",
+    "100_zig.png",
+    "101_zig.png",
+    "102_zig.png",
+    "103_zig.png",
+    "104_zig.png",
+    "105_zig.png",
+    "106_zig.png",
+    "200_machine.png",
+    "201_machine.png",
+    "202_machine.png",
+    "203_machine.png",
+    "204_machine.png",
+    "205_machine.png",
+    "206_machine.png",
+    "207_machine.png",
+    "208_machine.png",
+    "209_machine.png",
+    "210_machine.png",
+    "211_machine.png",
+    "212_machine.png",
+    "213_machine.png",
+    "214_machine.png",
+    "215_machine.png",
+    "216_machine.png",
+    "217_machine.png",
+    "218_machine.png",
+    "219_machine.png",
+    "220_machine.png",
+    "221_machine.png",
+    "222_machine.png",
+    "223_machine.png",
+    "224_machine.png",
+    "225_machine.png",
+    "226_machine.png",
+    "227_machine.png",
+    "228_machine.png",
+    "400_github_dnode.png",
+    "401_bouncy.png",
+    "500_browserling.com.png",
+    "501_testling.com.png"
+];
+var pending = files.length - 1;
+$(document).ready(function () {
+    for (var i = 0; i < files.length; i++) {
+        var div = $('<div>')
+            .addClass('slide')
+            .appendTo(document.body);
+        ;
+        $('<img>')
+            .attr('src', files[i])
+            .appendTo(div)
+            .load(onload)
+        ;
+    }
+});
+
+function onload () {
+    if (--pending >= 0) return;
+    $('#loading').hide();
+    
+    var slideNum = 0;
+    $('.slide:first').addClass('visible');
+    var slides = $('.slide');
+    
+    $(window).keydown(function (ev) {
+        if (ev.keyCode === 37) { // left
+            $('.slide.visible').removeClass('visible');
+            if (--slideNum < 0) slideNum = slides.length + slideNum;
+            $(slides[slideNum % slides.length]).addClass('visible');
+        }
+        else if (ev.keyCode === 39) { // right
+            $('.slide.visible').removeClass('visible');
+            $(slides[++slideNum % slides.length]).addClass('visible');
+        }
+    });
+}
+</script>
+<style type="text/css">
+    body {
+        background-color: rgb(35,31,42);
+    }
+    
+    .slide {
+        display : none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .slide img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .visible {
+        display: block;
+        text-align: center;
+    }
+    
+    #loading {
+        position: absolute;
+        text-align: center;
+        top: 200px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 100px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div id="loading">Loading...</div>
+</body>
+</html>
