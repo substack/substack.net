@@ -1,5 +1,5 @@
 var articles = require('./articles')();
-articles.appendTo('#root');
+articles.appendTo('#root .articles');
 
 var art = require('./art')();
 art.appendTo('#art');
