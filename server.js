@@ -3,6 +3,7 @@ var hyperstream = require('hyperstream');
 var qs = require('querystring');
 var fs = require('fs');
 var path = require('path');
+var archive = require('./archive.json');
 
 var glog = require('glog')(process.argv[3]);
 var ecstatic = require('ecstatic')({
@@ -21,6 +22,15 @@ var server = http.createServer(function (req, res) {
             res.setHeader('content-type', 'application/json');
             res.end(JSON.stringify(files));
         });
+    }
+    if (RegExp('^/posts/').test(req.url)) {
+        var id = RegExp('^/posts/(.*)').exec(req.url)[1];
+        if (archive[id]) {
+            res.statusCode = 301;
+            res.setHeader('location', '/' + archive[id]);
+            res.end('moved permanently');
+            return;
+        }
     }
     
     if (!/^\/[^\.\/]*$/.test(req.url) || RegExp('^/images\\b').test(req.url)) {
