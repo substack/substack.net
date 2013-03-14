@@ -1,4 +1,11 @@
 <style>
+  @font-face {
+    font-family: 'krona';
+    font-style: normal;
+    font-weight: 400;
+    src: local('krona'), url(krona.ttf) format('truetype');
+  }
+  
   #root {
     max-width: 890px;
     margin: auto;
@@ -26,9 +33,9 @@
     left: 5px;
     right: 5px;
     
-    background-image: -webkit-linear-gradient(bottom,rgba(69,44,28,1.0),rgba(69,44,28,0));
-    background-image: -moz-linear-gradient(bottom,rgba(69,44,28,1.0),rgba(69,44,28,0));
-    background-image: linear-gradient(to top,rgba(69,44,28,1.0),rgba(69,44,28,0));
+    background-image: -webkit-linear-gradient(bottom,rgba(245,240,220,1.0),rgba(245,240,220,0));
+    background-image: -moz-linear-gradient(bottom,rgba(245,240,220,1.0),rgba(245,240,220,0));
+    background-image: linear-gradient(to top,rgba(245,240,220,1.0),rgba(245,240,220,0));
   }
   
   #root .article .label {
@@ -75,11 +82,14 @@
   }
   
   #root .article .body {
-    background-color: rgb(69,44,28);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    color: rgb(69,44,28);
+    background-color: rgb(245,240,220);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    line-height: 150%;
+    font-family: 'krona', sans-serif;
   }
   
   #root .article .bottom-corner {
@@ -126,7 +136,7 @@
   
   #root .article a:link,
   #root .article a:visited {
-    color: rgb(190,190,220);
+    color: rgb(90,90,180);
   }
   
   #root .article a:hover {
