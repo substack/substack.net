@@ -221,7 +221,7 @@
     },
     "JSONStream": {
       "version": "0.4.3",
-      "from": "JSONStream@latest",
+      "from": "JSONStream@~0.4.3",
       "dependencies": {
         "jsonparse": {
           "version": "0.0.4",
