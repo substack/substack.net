@@ -4,6 +4,8 @@
   "dependencies": {
     "browserify": "~2.4.3",
     "brfs": "~0.0.2",
+    "uglify-js": "~1.2.6",
+    "JSONStream": "~0.4.3",
     "hyperglue": "~0.1.3",
     "hyperstream": "~0.1.0",
     "hyperquest": "~0.1.0",
