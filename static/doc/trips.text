@@ -1,0 +1,195 @@
+\documentclass{beamer}
+\usepackage{beamerthemesplit}
+
+\title{TRIPS CPU}
+\author{James Halliday}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+    \frametitle{What is it?}
+    {
+        \begin{itemize}
+        \item{Tera-op, Reliable, Intelligently adaptive Processing System}
+        \item[]{
+            \begin{itemize}
+            \item{University of Texas, Austin}
+            \item{IBM}
+            \item{Intel}
+            \item{Sun}
+            \end{itemize}
+        }
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{What is it?}
+    {
+        \begin{itemize}
+        \item{Goals}
+        \item[]{
+            \begin{itemize}
+            \item{
+                One TFLOP on a single processor by 2012.
+            }
+            \item{
+                Scale across hundreds or thousands of cores
+            }
+            \end{itemize}
+        }
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{How does it work?}
+    {
+        \begin{itemize}
+        \item{Explicit Data Graph Execution Instruction Set Architecture}
+        \item{Hyperblocks}
+        \item{
+            \begin{itemize}
+            \item{only 128 instructions}
+            \item{only 32 memory accesses}
+            \item{only 64 register accesses (32 read, 32 write)}
+            \item{one branch op (end)}
+            \end{itemize}
+        }
+        \item{Compilers already know enough to build these structures}
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{How does it work? (terms)}
+    {
+        \begin{itemize}
+        \item{Dynamic Issue *}
+        \item[]{
+            \begin{itemize}
+            \item{Order of instruction execution is not known ahead of time}
+            \end{itemize}
+        }
+        \item{Static Issue}
+        \item[]{
+            \begin{itemize}
+            \item{Order of instruction execution is known ahead of time}
+            \item{
+                It's really hard to know whether or not memory is in cache
+            }
+            \item{
+                Waiting for memory to appear in cache holds up everything else
+            }
+            \end{itemize}
+        }
+        \item{Dynamic Placement}
+        \item[]{
+            \begin{itemize}
+            \item{Dependency analysis performed at runtime}
+            \end{itemize}
+        }
+        \item{Static Placement *}
+        \item[]{
+            \begin{itemize}
+            \item{Dependency analysis performed at compilation}
+            \item{Programs are only compiled once, but run many times}
+            \end{itemize}
+        }
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{How does it work? (others)}
+    {
+        \begin{itemize}
+        \item{Other Approaches to Parallelism}
+        \item[]{
+            \begin{itemize}
+            \item{Superscalar}
+            \item[]{
+                \begin{itemize}
+                \item{Dynamic Placement}
+                \item{Dynamic Issue}
+                \end{itemize}
+            }
+            \item{Itanium}
+            \item[]{
+                \begin{itemize}
+                \item{Very Long Instruction Words}
+                \item{Static Placement}
+                \item{Static Issue}
+                \end{itemize}
+            }
+            \item{SIMD}
+            \item[]{
+                \begin{itemize}
+                \item{Hard-Coded Vector Sizes}
+                \item{Extra Circuit Complexity}
+                \end{itemize}
+            }
+            \end{itemize}
+        }
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{How does it work?}
+    {
+        \begin{itemize}
+        \item{Static Placement}
+        \item{Dynamic Issue}
+        \item{TRIPS is lazy!}
+        \item{Local dependencies are optimized by the compiler, not the CPU}
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{Why should I care?}
+    {
+        \begin{itemize}
+        \item{Exploit massive parallelism in sequential programs!}
+        \item{
+            Hundreds or thousands of identical cores on the same chip
+        }
+        \item{
+            Compilers are better at figuring out mundane details than you are
+        }
+        \end{itemize}
+    }
+}
+
+\frame{
+    \frametitle{Why should I care?}
+    {
+        \begin{itemize}
+        \item{Speaker: James Halliday}
+        \item{Subject: TRIPS CPU}
+        \item{What it is}
+        \item[]{
+            \begin{itemize}
+            \item{experimental, lots of identical cores}
+            \end{itemize}
+        }
+        \item{How it works:}
+        \item[]{
+            \begin{itemize}
+            \item{hyperblocks, static placement, dynamic issue}
+            \end{itemize}
+        }
+        \item{Why you care:}
+        \item[]{
+            \begin{itemize}
+            \item{compiler figures out parallelism details on thousands of cores}
+            \end{itemize}
+        }
+        \end{itemize}
+    }
+}
+\end{document}
