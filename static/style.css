@@ -68,6 +68,37 @@ body {
     border-top: 8px solid rgb(92,62,37);
 }
 
+#startup-banner {
+    width: 740px;
+    margin: auto;
+    color: rgb(190,142,102);
+    position: relative;
+    top: -20px;
+    margin-bottom: -25px;
+    padding-bottom: 10px;
+}
+
+#startup-banner .desc {
+    display: inline-block;
+    width: 310px;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#startup-banner img {
+    margin-top: -10px;
+}
+
+#startup-banner a:link,
+#startup-banner a:visited {
+    color: rgb(190,190,220);
+}
+
+#startup-banner a:hover {
+    color: rgb(130,130,250);
+}
+
 #icons {
     display: inline-block;
     width: 150px;
