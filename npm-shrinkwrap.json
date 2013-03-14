@@ -277,7 +277,7 @@
     },
     "through": {
       "version": "2.2.1",
-      "from": "through@"
+      "from": "through@~2.2.1"
     },
     "inherits": {
       "version": "1.0.0",
