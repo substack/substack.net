@@ -33,7 +33,8 @@ var server = http.createServer(function (req, res) {
         }
     }
     
-    if (!/^\/[^\.\/]*$/.test(req.url) || RegExp('^/images\\b').test(req.url)) {
+    if (!/^\/[^\.\/]*$/.test(req.url)
+    || RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {
         return ecstatic(req, res);
     }
     
