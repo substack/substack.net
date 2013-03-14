@@ -1,0 +1,86 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(window).load(function () {
+    $('#loading').hide();
+    
+    var slideNum = 0;
+    $('.slide:first').addClass('visible');
+    var slides = $('.slide');
+    
+    $(window).keydown(function (ev) {
+        if (ev.keyCode === 37) { // left
+            $('.slide.visible').removeClass('visible');
+            if (--slideNum < 0) slideNum = slides.length + slideNum;
+            $(slides[slideNum % slides.length]).addClass('visible');
+        }
+        else if (ev.keyCode === 39) { // right
+            $('.slide.visible').removeClass('visible');
+            $(slides[++slideNum % slides.length]).addClass('visible');
+        }
+    });
+});
+</script>
+<style type="text/css">
+    body {
+        background-color: rgb(50,20,40);
+    }
+    
+    .slide {
+        display : none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .slide img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .visible {
+        display: block;
+        text-align: center;
+    }
+    
+    #loading {
+        position: absolute;
+        text-align: center;
+        top: 200px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 100px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div id="loading">Loading...</div>
+
+<div class="slide">
+    <img src="0.png">
+</div>
+<div class="slide">
+    <img src="1.png">
+</div>
+<div class="slide">
+    <img src="2.png">
+</div>
+<div class="slide">
+    <img src="3.png">
+</div>
+<div class="slide">
+    <img src="4.png">
+</div>
+<div class="slide">
+    <img src="5.png">
+</div>
+<div class="slide">
+    <img src="6.png">
+</div>
+</body>
+</html>
