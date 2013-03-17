@@ -5,7 +5,11 @@ var fs = require('fs');
 var path = require('path');
 var archive = require('./archive.json');
 
-var glog = require('glog')(process.argv[3]);
+var glog = require('glog')({
+    repodir: process.argv[3],
+    id: 'http://substack.net',
+    title: "substack in cyberspace"
+});
 var ecstatic = require('ecstatic')({
     root: __dirname + '/static',
     showDir: true,
