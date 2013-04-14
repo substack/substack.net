@@ -1,6 +1,6 @@
 {
   "name": "substack.net",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "browserify": "~2.5.1",
     "brfs": "~0.0.2",
