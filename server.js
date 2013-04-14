@@ -6,7 +6,7 @@ var path = require('path');
 var archive = require('./archive.json');
 
 var glog = require('glog')({
-    repodir: process.argv[3],
+    repodir: process.argv[2] || process.env.HOME + '/data/substack.net',
     id: 'http://substack.net',
     title: "substack in cyberspace"
 });
@@ -57,4 +57,4 @@ var server = http.createServer(function (req, res) {
     
     indexStream.pipe(hyperstream(streams)).pipe(res);
 });
-server.listen(process.env.PORT || Number(process.argv[2]));
+server.listen(process.env.PORT || Number(process.argv[3]));
