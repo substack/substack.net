@@ -6,7 +6,7 @@ var path = require('path');
 var archive = require('./archive.json');
 
 var glog = require('glog')({
-    repodir: process.argv[2] || process.env.HOME + '/data/substack.net',
+    repodir: process.argv[2] || process.env.HOME + '/data',
     id: 'http://substack.net',
     title: "substack in cyberspace"
 });
