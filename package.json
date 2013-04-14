@@ -17,7 +17,7 @@
   },
   "bundledDependencies": [ "JSONStream" ],
   "scripts": {
-    "bundle": "browserify -t brfs browser/main.js | uglifyjs | gzip > static/bundle.js.gz",
-    "dev": "browserify -t brfs browser/main.js --debug | gzip > static/bundle.js.gz"
+    "postinstall": "./install.sh",
+    "start": "node server.js"
   }
 }
