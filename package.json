@@ -12,7 +12,7 @@
     "inherits": "~1.0.0",
     "single-page": "~0.2.2",
     "ecstatic": "~0.4.1",
-    "glog": "~0.2.4",
+    "glog": "~0.2.5",
     "deck": "~0.0.4"
   },
   "bundledDependencies": [ "JSONStream" ],
