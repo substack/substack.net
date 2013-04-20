@@ -50,17 +50,17 @@ function Articles (uri) {
         
         self.elements[title] = elem;
         self.emit('loaded', title);
+    }
+    
+    function end () {
+        self.loading = false;
+        self.emit('ready');
         
         if (window.location.hash) {
             var h = window.location.hash;
             window.location.hash = '';
             window.location.hash = h;
         }
-    }
-    
-    function end () {
-        self.loading = false;
-        self.emit('ready');
     }
 };
 
