@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    width: 650px;
+    margin: auto;
+}
+
+#playlist {
+    float: right;
+    width: 150px;
+    text-align: left;
+}
+
+#player table input.uri {
+    width: 320px;
+}
+
+#player table input.volume {
+    width: 50px;
+}
+
+#player table input.offset {
+    width: 50px;
+}
+
+#buttons {
+    text-align: center;
+    width: 425;
+    margin-bottom: 10px;
+}
+
+#buttons input {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+#source {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+In the articles script, single quotes are placed around the user-supplied author
+parameter to the database and the hash is hidden in a secret table.
+By submitting an author of
+    "' or 1 --"
+it becomes clear that the script will list multiple rows, which is useful.
+
+It is possible to select constants out of a select query, not just column names.
+Constants are useful in order to prototype the column parameters of an injection
+to show where they will render in the result. The constant "10" is used here to
+start out, but the choice is arbitrary.
+
+In order to get the database schema with the secret table name in it,
+an author of
+    "' union select 10 from sqlite_master --"
+returns the useful error message
+    DBD::SQLite::db prepare failed: SELECTs to the left and right of UNION do
+    not have the same number of result columns(1) at dbdimp.c line 271 at
+    index.cgi line 17.
+
+Trying two columns but using a different number to distinguish where the columns
+will render in the output,
+    "' union select 10,20 from sqlite_master --"
+still produces a similar error, but
+    "' union select 10,20,30 from sqlite_master --"
+returns the text
+    20
+    30
+which indicates that the columns put into the places of 20 and 30 will render in
+the output. Replacing the 20 with the sql column of the sqlite_master table,
+    "' union select 10,sql,30 from sqlite_master --"
+shows the schema for the secret table,
+    CREATE TABLE secret_hidden_table_of_doom (secret_md5_column text)
+
+Replacing "sql" with "secret_md5_column" and replacing
+"sqlite_master" with "secret_hidden_table_of_doom" yields the secret hash.

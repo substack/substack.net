@@ -1,0 +1,2711 @@
+commit 65d13d5cf63a61827d1d286e5d82b8ca09290a30
+Merge: e30427e 635c4ef
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 20:29:50 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit e30427eae7ef37e17b84ec6d7163df7891b5f832
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 16:06:13 2010 -0800
+
+    fucking color
+
+commit 635c4ef7fdd2d4b0084fade427dc668d43007c2a
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:56:28 2010 -0800
+
+    Quit bug fixed, note re: spectating
+
+commit 44d130c7f139999f861908074933cc4cf54e463f
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 15:42:32 2010 -0800
+
+    fewer parameters, prep for state
+
+commit f61ca0da07086d6d57851e14c2ae65ef825f157c
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:42:32 2010 -0800
+
+    Exiting now works better
+
+commit b6ff33353d5cf5b2d28c487bc6cb9f2cf2ae4b61
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:38:43 2010 -0800
+
+    Quitting now works
+
+commit 3927bc0c4155b81ca10b0c20af2bc4a3e9453f55
+Merge: 0b1be63 3031d24
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:32:16 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 3031d249078fe17a81d743a8cd12f7703a957077
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 15:31:05 2010 -0800
+
+    quit betterer
+
+commit 0b1be631a1f2d78645d5cac5df1e0faf2ed3e3a5
+Merge: a3cc6f9 669e7ae
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:30:57 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 669e7ae85e5f80af31237f99ada3b133ddbcab84
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 15:29:28 2010 -0800
+
+    now you can call server.quit()
+
+commit a3cc6f9f3514459cee87684bd58a330951077c45
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:29:07 2010 -0800
+
+    exit button all up ins, just need to make it DO something
+
+commit e68c9fc186efbca98c3d02a44e30f828a411ee02
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 15:23:17 2010 -0800
+
+    fix the crash bug for the second player with extract
+
+commit b4aced994e5dc3ddf75011e1b2c28ecd85fccc30
+Merge: ab6f02e b24c12c
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 15:06:57 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit b24c12cd7032a8b2c87c2c7bda4141bb511e632d
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 15:04:42 2010 -0800
+
+    far more obvious stroke paths
+
+commit 5cdc9e4a0d4c95a3965dff6cfcd4019bc117042e
+Merge: c450dfd b1fff9a
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 14:57:59 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit ab6f02e3744e56b7a46cc172c6e989142e0e2b31
+Merge: b1fff9a c450dfd
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 14:48:22 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit c450dfd8837445e978c8d6f336b50c5616b6a784
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:43:38 2010 +0300
+
+    with events enpassant 10 loc -> 2 loc
+
+commit 2712e7fc4d571ae227b49499f9d85aa9e1db208f
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:43:15 2010 +0300
+
+    detect enpassant and emit the pawn to be eliminated
+
+commit b1fff9a4965fef779cd07fee397319add95d665e
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 14:38:35 2010 -0800
+
+    Buttons now show alternative and not current setting, and rock a pointer
+
+commit 7055f9dfe167f68004244a8435c03f1e34f5d62c
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:32:35 2010 +0300
+
+    todo done. just highlightOff on same square click
+
+commit 46c80f556229be91469b5bc368e1f0001167ba82
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 14:26:44 2010 -0800
+
+    Bitchin-ass buttons now
+
+commit ca703f1f9468e1f8a0ea8880a4ae341e52fda23b
+Merge: f054a20 46c80f5
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:26:27 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit f054a20f9c5f535956b1fa37bc6b2400ee8d8d8c
+Merge: 15698bb a1e868a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:09:19 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit a1e868a6e01f6154fd383150f8b34ca8bde1dd9c
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 14:07:34 2010 -0800
+
+    flipping buttons
+
+commit 5474ebd75ccbf709c5d2e4f04d798eb764d741bb
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 14:02:03 2010 -0800
+
+    made an askew button
+
+commit 15698bbc98da8bc7a2e81e0033f6beb6f8d4f5a9
+Merge: 8ec9736 5474ebd
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:01:18 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 8ec97369fba285ff1f7b5da7f09d9ca834356dc5
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:01:09 2010 +0300
+
+    board now checks for empty src and if src is not dst (selfmove)
+
+commit 2e8c0f8810adbcc37dcac30e3b7b3c54e93d6ed4
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 01:00:47 2010 +0300
+
+    had error in the test, moved piece onto itself
+
+commit d8374948ed71b85150c873bf57eb802c1c05dd6a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:58:01 2010 +0300
+
+    oops had dx.sy instead of dx,sy
+
+commit c2fc88419ba106ab84623c054abe61fe2c009b03
+Merge: f772671 d2bcf4a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:46:52 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit f772671decc3dc62c3434ab69ee85cd83c89b7b9
+Merge: b56b22d ac2709b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:46:42 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit b56b22d51058593c0b5266129f2a98e521c211f5
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:46:32 2010 +0300
+
+    this logic is no longer necessary as board removes the en passant capture
+
+commit f2ce2227d33e85a499243d2c9cbc660d1411f373
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:46:19 2010 +0300
+
+    board noew removes the en-passant captured piece
+
+commit d2bcf4a80d0a30924e0776296dec783e1083ea88
+Merge: 7dccfc3 ac2709b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 13:43:36 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit ac2709b061078f8b6021982e5db027df36c7f6a5
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 13:41:56 2010 -0800
+
+    rect button
+
+commit e65beae74cb5cc5cb7e8ee9be3b9ae6a02a6c9bc
+Merge: 4950e22 c20439b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:27:37 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 4950e22c86ff7a26c93077ed8f1381ac74143c3b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:26:55 2010 +0300
+
+    en-passant works client side
+
+commit 7dccfc30830d99bae6b148d38875cb9cfe375cd9
+Merge: f1f8c14 c20439b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 13:25:45 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit cf1ef3e83e31af8d0cb3c822657e5bd0362f5937
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Mon Aug 30 00:24:26 2010 +0300
+
+    rename lastmove -> lastMove
+
+commit c20439bc1a9ae4742f4bc91711acafcfaeddc315
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 13:21:21 2010 -0800
+
+    no more bottombar, stubs for images
+
+commit f1f8c14a1f1ad2fcbe767dd6dad1b8fa8525dc79
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 13:11:58 2010 -0800
+
+    It turns out code reloading is useful when you're not on localhost
+    
+    This reverts commit 12e894a31b133bb00edc6e61e9298c819bc03b30.
+
+commit 1c8cc806a2113a45ec06d1fe64cac5e6b247f486
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 13:09:58 2010 -0800
+
+    free up user on conn.end
+
+commit d0d0e5c67430fcdf16c7f862132f430b58f41aff
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 13:07:44 2010 -0800
+
+    prettier notifications
+
+commit a0005fded2107bcb57b0cd3f02e935d86115ff92
+Merge: 12e894a d7dfea5
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 13:05:07 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit 12e894a31b133bb00edc6e61e9298c819bc03b30
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 13:04:55 2010 -0800
+
+    Didnt actually need the image preload--just that messed up thing with the ash texture
+
+commit ce3cbecd3d198b97641ba3a84800dc7069be6684
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 12:58:33 2010 -0800
+
+    Violence images should load better now
+
+commit d7dfea5e73597bdc19a10c3ed0e10e596a144ecc
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:49:25 2010 +0300
+
+    promotion now totally works
+
+commit c1aecfc17057dd274dbe729ca1477c4c18f8c242
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:37:59 2010 +0300
+
+    dupe code ???
+
+commit aa2a782866b087d1ec1db2c16038b1c2ed82c4eb
+Merge: 7039b4e b2f0402
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 12:29:52 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit 7039b4ea0fffb55b630c631b3b06269c7d65643b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 12:29:38 2010 -0800
+
+    A cute lil endgame dialog
+
+commit 1d2541758f6b2346443a0fd9f59d1c3983145fc2
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 12:27:11 2010 -0800
+
+    png noscript image
+
+commit b2f04028fd388599c4dcb6d291ba7b4f91648e39
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:24:29 2010 +0300
+
+    black castlings work
+
+commit 08cb688c3cd9b1079148c587890c9fcc90b6058b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:19:48 2010 +0300
+
+    oops more than one conflict
+
+commit b9e3cce42c0edbfc6b5b6c08076d825d6665fc9a
+Merge: 72e404d d0d98a4
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:18:40 2010 +0300
+
+    resolved merge errors
+
+commit cc249f2e96f8207d6d3a5d90c984c7e2015d8c54
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 12:18:36 2010 -0800
+
+    try{} bundleScript and ignore if it fails
+
+commit 72e404d852a288cba8a6a436395306bca93d3f72
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:16:03 2010 +0300
+
+    white castling works, wowowowo
+
+commit d0d98a4104738eebb5c75e7771530be263b0ca3c
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 12:14:31 2010 -0800
+
+    merge and fix another renaming bug
+
+commit 75c60a2e3c3e63e97c9d6adf89dc5284bf0282ba
+Merge: 65751af 4c18026
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 12:04:52 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 4c180265763de7937443fd369562bfd9c31530fd
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 12:04:10 2010 -0800
+
+    AWESOMETASTIC ANIMATIONS GUYS HAUGALAGLAG
+
+commit 65751af46e2ee1af908a784172c03d4a3dca8774
+Merge: a4c2805 3daa98a
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 12:03:14 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 3d44d0f97fbbdbabb310c59d8c2d9a332a44918a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 23:02:49 2010 +0300
+
+    propogate choice everywhere (choice == promoted pawn). promoted pawns now act as real pieces
+
+commit 57639619c0d3183d49efe40392f450606a23da9c
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:59:29 2010 -0800
+
+    Basic anims are there, just have to adjust timing now
+
+commit a4c2805211561a9af13bbf5bab04cf4ff42384be
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 11:59:27 2010 -0800
+
+    viewer.joined => viewer.parted >_<
+
+commit 23472fd87e506bfe7cf8ff4e3e6336752d3777d1
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 11:52:14 2010 -0800
+
+    vs for joins works, parted fails
+
+commit 7e76ba33e1d2487d971b9f70d2e86968d8d18678
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:40:40 2010 -0800
+
+    Added a special case to board.on('move') to handle the stupid render bug
+
+commit ab13450be6ec0fe9ee291e5cebf1eb324d8479a3
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:26:10 2010 -0800
+
+    Re-fixed bug after merge
+
+commit 59958993ac440e84ff8c4e312d8d9e1159aa2f1a
+Merge: 13515c1 3daa98a
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:23:41 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit 13515c15d225e9945961668fe5f1f66f25a8f900
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:19:17 2010 -0800
+
+    Fixed bug where the pieces would scoot to the right each move (I think). Dont know why that worked, but it did.
+
+commit 3daa98ac7fce5bb4cd4eb6bd8d75aaa5a6b633a6
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 22:14:33 2010 +0300
+
+    update gameState with kings and rooks moved to prevent castling
+
+commit 1032669e04509ff54c3c20c02de4d91f54175ac0
+Merge: acb63bd 0bb89c7
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 11:02:23 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 3510fb8789b212e7df207a23e7b71796757c7493
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 22:01:51 2010 +0300
+
+    after promotion, choice piece is drawn correctly
+
+commit cf3d52cbd9adadd01155e055d38163717572ac12
+Merge: f1b02e1 0bb89c7
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:01:47 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit f1b02e1b96b576eff4f5923dac30fcacde5b2534
+Merge: 15884b4 e900e98
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 11:00:59 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit acb63bdd920a9b668f6ca9f2e42fdeb3258833e6
+Merge: ccd8853 15884b4
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 11:00:48 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit ccd8853393f2ffa07d8687f94356b3954b71f344
+Merge: 5e6e0e7 e900e98
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 11:00:31 2010 -0800
+
+    put moveMakerF back
+
+commit 5e6e0e7c4fc24c2909db270f7ddc52e436609045
+Merge: e414b0f 0e0f7bd
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 10:59:24 2010 -0800
+
+    merge
+
+commit 0bb89c72b9b7f56bef27e1d818183c29d4abade8
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:58:54 2010 +0300
+
+    pawn promotion dialog now pops up correctly
+
+commit e414b0fc35f5d5b38434a7fad822cb7b3c407b03
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 10:57:58 2010 -0800
+
+    push joins and parts all the way to the viewer
+
+commit e900e984263ae241712c1a481cf83d990e6ab37a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:56:50 2010 +0300
+
+    viewer now has gameState itself
+
+commit 519c794aa2c2d96650f7fdcce25357a8b3544a0c
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:56:20 2010 +0300
+
+    pass moveMakerF again into viewer, not the whole game
+
+commit 15884b411615d9a224c15aa261dc84e5f3846eab
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 10:52:33 2010 -0800
+
+    Graffix much better now
+
+commit 0e0f7bdf403e3ed5e1f608d5199b6353fca45d72
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:46:45 2010 +0300
+
+    pass the whole game to Viewer, so I can access game.state
+
+commit 5ea26e9f4e194e90036715d5bfcac5a8639a93ea
+Merge: fe64c54 bc3e2b7
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:43:11 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit fe64c54d92017a19bb66426e9b4be011c4f65eb7
+Merge: 663aecb b1e7fcf
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:42:56 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 663aecb836bedeb0e77ddba92d6b5107b4895a9f
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:42:28 2010 +0300
+
+    testcase for can't move, turned out it didn't work on the board because we didn't have the state yet
+
+commit 58d4e23acc2e329a9cbb749dc78a8d226f17a926
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:42:04 2010 +0300
+
+    violence-be-gone
+
+commit bc3e2b77963d1a8d91a0c3097f91a6cb25b8c6d4
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 10:39:42 2010 -0800
+
+    pass in "moveMakerF" in all three Viewer calls
+
+commit 0172f86b11e6e33853cf4966808c2a56d49e70aa
+Merge: c5be6bd b1e7fcf
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 10:27:30 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit b1e7fcf2611245342b436a559fc37ec589dff773
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 10:26:55 2010 -0800
+
+    Viewer now knows which player you are
+
+commit 86ee75e27f4a6c0083b43994c89f8cabf8540605
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:25:59 2010 +0300
+
+    capture to the west-side didn't work
+
+commit 062bc298861741ea8e31e3204be02a88f515584a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:25:44 2010 +0300
+
+    added pawn test
+
+commit c5be6bd7a4ab363256e583b2cf13b1fb0d1f976b
+Merge: f041f4d 7140959
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 10:20:27 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 2ad1eba4b876d1e2dd17c7ed0fab10e873d72f18
+Merge: 22bf91d 7140959
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 10:20:23 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit f041f4d0fd531be8f095060342774f6ee94c7a30
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 10:18:36 2010 -0800
+
+    added per-file error tracking but it sucked
+
+commit 41a77d079dbc7b6a54766d19525577aa2bac8edc
+Merge: 7140959 22bf91d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:18:14 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 7140959d80bbdcd0840dc5034f04b92fb0333d35
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 21:17:31 2010 +0300
+
+    should be able to move only legal moves now from client side (no checking at server side yet))
+
+commit 22bf91dffc07a6f8d3f4e576576ac1f866ae4cb5
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 10:14:11 2010 -0800
+
+    Turns out it was defined at the top. D-oh!
+
+commit 8c9f2c8945bd375ec9ed6b96933568b15a03237f
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 10:06:44 2010 -0800
+
+    Added some code for adding violence, but idk where the canvas is
+
+commit d1bf802f4b80b368dcca7aecf2c0b78a7b08e22a
+Merge: a37a9a2 671f36b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 09:47:14 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit e1cd0172339130fe9c3610c3f2dcfa01b3d481fd
+Merge: fdc2208 671f36b
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 09:46:54 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit fdc22081b3c40b57ce4c16cd90158d97167771aa
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 09:46:24 2010 -0800
+
+    bundle watcher for development mode
+
+commit 671f36bbc6bd5a1582f2840174ac0c1d393576fc
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 20:44:02 2010 +0300
+
+    pass moveMakerF around and it works.
+
+commit 98c897bf6d375b5a0754a48d3e210b59b8704085
+Merge: a37a9a2 98be587
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 09:36:00 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit a37a9a2aa03bc2bd636eb43b23929ef9a18d93fc
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 09:35:03 2010 -0800
+
+    take out script kludge, roll into a single /bundle.js for much faster loads
+
+commit 98be587a8e25779d199fe7f1c1d1c53c36181fa4
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 20:08:50 2010 +0300
+
+    zizzle-be-gone
+
+commit 79526a1be16f86683e4b9c44404d6cb1c8c27bfe
+Merge: 4fdf1a8 7d3d5eb
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 20:07:19 2010 +0300
+
+    resolve james
+
+commit 7d3d5eb6e7ccf47ff4821cbf59a95b91dc916734
+Merge: a8a443f 829ba12
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 09:02:32 2010 -0800
+
+    transform offset fix after merge
+
+commit 4fdf1a84eb4d29da62fbfe0fd47d677b021ec7ee
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 20:00:50 2010 +0300
+
+    introduced blockAllInput boolean, which is set to true when ProtomtionDialog is called, so that the user chooses a piece and doesn't make some other move or something
+
+commit fb88026cb9fce5257f351f0cbdc5a43d778556ed
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:53:40 2010 +0300
+
+    promotion should now work. prwahah
+
+commit cabace1ff8c079fd979ee745a9363c9433feeac4
+Merge: 6bf9b70 829ba12
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:51:05 2010 +0300
+
+    resolve merge from jesus
+
+commit 6bf9b70357222270ff9bb7f8f603759fdc8c3b24
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:50:14 2010 +0300
+
+    promotion dialog now callbacks, and should work as soon as i get piece at sx,sy after it has moved
+
+commit 829ba12594dc2e5a57353808057b6001b93a8e80
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 08:48:18 2010 -0800
+
+    forgot to also fix transform.rect
+
+commit f23e0c3aa9d96cbc7768dcc079ffef39dca1fbf4
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 08:43:51 2010 -0800
+
+    Should fix the orientation of the white-on-top board
+
+commit a8a443fa5f2eebd160d63ffce49ac1c4956226a7
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:26:16 2010 +0300
+
+    one more knight test
+
+commit 3cfb3a954d013e6b78206d464cf779a103b91c39
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:21:25 2010 +0300
+
+    another knight test
+
+commit 4d91fa0648e243e4b0ded1bf0f9d47335f3abab2
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:01:38 2010 +0300
+
+    export game state
+
+commit 90f6d708ab24caf49839514b4db1bbd4ac2a3783
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 19:01:26 2010 +0300
+
+    pieces in pawn promotion dialog now resize
+
+commit eceb9cba9f19ea14abf0f3d198d6463043654d3e
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 03:33:12 2010 -0800
+
+    main board animates from an interval server-side
+
+commit 793a758c6cad434105840952743ec768f469958a
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 03:03:04 2010 -0800
+
+    a <noscript> for the scraper
+
+commit 84d292c7b6d48701def942e274e5a9ab24a06f12
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 02:51:34 2010 -0800
+
+    less horizontal padding
+
+commit ed8ec47f01b3874c54323d6be18bc97d85237bd7
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 02:46:16 2010 -0800
+
+    back black horses maine red instead of green
+
+commit 632a2db38b1a855c87a512f8adc7877b84336aa4
+Merge: 2e66e4d 40a4da6
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 02:40:07 2010 -0800
+
+    thumbnail events working on an interval again, all through games emitter not individual games
+
+commit 2e66e4d94e2ec712d8385d2879c1fac1f1baee23
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 02:17:39 2010 -0800
+
+    default name on page load and live renames
+
+commit 40a4da63c25e54b2375996acfb9b76e266433456
+Merge: c812ef9 728c250
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 01:43:17 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit c812ef9b3233c8ccbbeba7a9f9c239b6fff935ca
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 01:43:05 2010 -0800
+
+    Fixed draw order with pieces. Also, incidentally, changed the "play chess" text to "register name"
+
+commit e43b80cc927eb8c1e9b6862cc3bd9ba8bd2cd1c8
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 01:36:47 2010 -0800
+
+    Looks great, except for how the pieces are sitting on each others faces now.
+
+commit 96fcad95ebd953dcde5654c7cbfc4f467e6c4f46
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 01:34:42 2010 -0800
+
+    solid gray background now
+
+commit a8e0a1c0610347e4d721b0f66a9009731d9c7bef
+Merge: 12187ef f1587e4
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 01:22:44 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 12187efdfc4658f67ab9cb16f0258be67db9d4e3
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 01:22:22 2010 -0800
+
+    delete games properly
+
+commit f1587e4b45b4892a444d7b74a5782b72883a8ae9
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 01:21:35 2010 -0800
+
+    Looks great, except for the whole "doesnt actually rotate the board" problem for side-on
+
+commit 005a729d749756a32981654f5492cf7fa28b892b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 01:14:44 2010 -0800
+
+    Overhead views fixed, now the hard one
+
+commit 728c2507e7f4920aade4b8275a1189bb4b092bee
+Merge: e17ac39 3c14da4
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 01:11:47 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit e17ac3969362c4d0dc21d5756404d91270c43915
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 01:11:12 2010 -0800
+
+    forgot to repopulate thumbs with server.games after I changed registerGame
+
+commit 3c14da4fc36d3dca5b52dc4c23e204ecb491aabc
+Merge: 3390f1e 1771d5b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 11:59:39 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 3390f1ea00b801135a41040db82a30b606e7fd3d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 11:57:39 2010 +0300
+
+    valid move highlighting now works
+
+commit 1771d5bcc439001c9eb4c8c332eca61d1c9c6e74
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:50:28 2010 -0800
+
+    More uses of notify where we used console.log only in the past
+
+commit 71dc8b6657930d34c6293c41c11837f506510c4a
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 00:49:11 2010 -0800
+
+    "join" => "joined", some stuff is still wrong though
+
+commit ce4fe28920c9a88b3cb4d9c305f08b85151e1e8b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 11:48:40 2010 +0300
+
+    square highlighting works, but only for pawns now, and also no game state yet
+
+commit 079e830d7c832f768202f9a2f16b9f3e166c41d9
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:41:59 2010 -0800
+
+    Made button text more reasonable
+
+commit 692628f949450cc69ba31f56d3cb6075262e1dfc
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:40:17 2010 -0800
+
+    We now have crummy toggles for both topside AND view angle.
+
+commit 976d4f282cc45dd213e5b4d123a2d70199e1eced
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:30:45 2010 -0800
+
+    Slightly better toggling behavior. Button looks like shit though.
+
+commit cd11ba1671eae0277d511cab7e4b17f5544f7b11
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:18:37 2010 -0800
+
+    View is now toggle-able
+
+commit 15a3d9b22ed9de8e95b78051804c366a1b0d397a
+Merge: a37964c cd11ba1
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 11:17:15 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 75efc4e03abcddb4cb8efeb3c45b93420b4a69a6
+Merge: 95cc930 c0a456b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:08:39 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 95cc9302590c886b284162c1806aaaba285c0efe
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sun Aug 29 00:08:28 2010 -0800
+
+    Hacked in a view toggle
+
+commit c0a456b095da73cfc6d49fb9c30989b7dfcf5b18
+Author: James Halliday <substack@gmail.com>
+Date:   Sun Aug 29 00:06:41 2010 -0800
+
+    join a game works
+
+commit a37964c56829d27ab3da77e61f775e9293bc26e1
+Merge: d22361d c0a456b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 11:05:22 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 5878fdefe7105aca868f5336099385153e3ea870
+Merge: f3a1aed d591aec
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 23:59:24 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit f3a1aed70b66a246937a86371086f35f22de183d
+Merge: d7ba735 80e6b75
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 23:58:33 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit d22361de73209cbd63743b9ae2d8117ee4df309a
+Merge: 7ff17f0 d591aec
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:57:51 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit d7ba735eedc760f4aab7402e3905aea9f2c4d36a
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 23:57:39 2010 -0800
+
+    board grid updated correctly finally
+
+commit 7ff17f0ce884b6af5de3d648dcfc80617d050df5
+Merge: 80e6b75 d7ba735
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:56:48 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 291bfbbf7efad5a36783029fe53909b917840914
+Merge: f74d560 80e6b75
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 23:47:11 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit f74d5603816d48720b18757984cb19bd0ba168e8
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 23:46:39 2010 -0800
+
+    Got rid of background colors. SO lame
+
+commit 80e6b756dd4c02eb4e35f3f071efe0c24eb6360f
+Merge: 953b1da b2b621f
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:43:19 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 953b1da451c12ea749fcb45a84c1221d17a19e1e
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:43:04 2010 +0300
+
+    add move function to player
+
+commit c61691f423b48c4278413f4f04fe09d65f45a9ea
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:42:55 2010 +0300
+
+    add newMove function to gamestate
+
+commit b2b621f10810509d2b704a9bc46619a43cf8bc8a
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 23:42:04 2010 -0800
+
+    registers created, doesn't register joined yet
+
+commit d591aecd43f3759de6830f29f0a8d90bb1961281
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 23:42:00 2010 -0800
+
+    Shoved in a notification bar down low
+
+commit b9f4439c7701e0ef23ea9797bcd6e3ad4d4f5881
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:39:15 2010 +0300
+
+    gamestate is now self'ed
+
+commit 00f02578625468b2eaf34ca9d15faa445ec1a659
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:34:07 2010 +0300
+
+    stub for select piece in pawn promotion dialog
+
+commit 9ddd1a624d2244f5771d0874c8a6943d603c9b4a
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 23:33:05 2010 -0800
+
+    create a game from scratch
+
+commit 94eb24a2a0cf07bb0bde34e0ea9de8d902c0646c
+Merge: c921202 d438475
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:07:49 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit c9212021a2baf480f7ab8c9d08c9b94c23985064
+Merge: f1a7cb7 cb5f885
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:07:42 2010 +0300
+
+    resolve merge conflict
+
+commit f1a7cb796778d78cc37958c7457039e23efb7eb5
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 10:06:26 2010 +0300
+
+    lousy pawn promotion box, x,y randomly float around for some reason
+
+commit d4384757a6f6f31d5b20eea24937722f48a75998
+Merge: a3ecbdf cb5f885
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 22:58:19 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit db1d5aadae1007a25ea935a226ed0056225c12da
+Merge: cb5f885 eb6b161
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 22:57:36 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit a3ecbdfa8611ef2c73a223dd98ba46c8df44e812
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 22:57:34 2010 -0800
+
+    favicon--now I know where my friggin chess tab went
+
+commit cb5f885491551ee83ae923507b2bb2f05d9a777b
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 22:56:37 2010 -0800
+
+    no more toggling or using hard-coded games
+
+commit af2485d26476dd55c46e2a70c8149e0a489b1f61
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 22:48:58 2010 -0800
+
+    load movegenerator client-side
+
+commit 2fddba1120649b669f2a9c2d69a2026744fe0b5b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 22:46:17 2010 -0800
+
+    Added a stub that kinda deals with how to choose the kill images
+
+commit a4b8c237514454bc60a3bb64ee8ba7bcfab1ef45
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 22:30:00 2010 -0800
+
+    join/part propagates
+
+commit 92b7b67e4bcf34f9ee162cb3e686666591c7b5ed
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 22:24:44 2010 -0800
+
+    mods to white royalty
+
+commit 6cac863442da697c118fed1d0e8545ad55a04d03
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 22:20:04 2010 -0800
+
+    mods to black royalty
+
+commit 160bd0869954bf24a7be20a535ea568923afe646
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 09:12:45 2010 +0300
+
+    factor out svgFile so that I can reuse it in pawn promotion dialog box
+
+commit bcd09368f45ebf3a1145332971af3a0221ca832e
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 09:12:20 2010 +0300
+
+    remove empty line
+
+commit e0a892388a93880459c9682396b0a0d4d86f4376
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 21:59:27 2010 -0800
+
+    Made offsets pre-transformation for scalingness
+
+commit 265f4265179ed05f7acae8f3d51aab8be6125d2f
+Merge: eb6b161 50c7f42
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 08:55:07 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit eb6b1618ce6f82de69099b7bc4df12021942eb6b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 08:54:40 2010 +0300
+
+    castling tests
+
+commit 62a75e78b015e49f788586471fc6cd1942267bf2
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 08:54:35 2010 +0300
+
+    castling checks
+
+commit 2bf48dba74c8b92992f6bd79c82559f222218677
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 21:53:21 2010 -0800
+
+    Made board less slanted
+
+commit f2dd6b47dc91fc1ec72ece6fb5dc7b7b99ce48c9
+Merge: 78ac826 50c7f42
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 21:45:15 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit eaf5b8a16bdeb486a393c7093b2bd9802dcca43f
+Merge: 50c7f42 5da009e
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 21:44:35 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 50c7f421b638c819552347c611af68bb605afec1
+Merge: 90af57c ca97cb4
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 21:42:37 2010 -0800
+
+    merge with pkrumins and crazy <script> hack
+
+commit 78ac8269c8aaa6fe43713701e059e26b8f1844a6
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 21:35:02 2010 -0800
+
+    Added some fudge factors for particular awkwardly-shaped pieces--ie, rook and pony
+
+commit 5da009e109c8f6c50dc7483b942aa589f193bc27
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 21:29:20 2010 -0800
+
+    fudged numbers so that unit placement is reasonable
+
+commit 90af57c9084e78f5ed875542c534dea86289f3eb
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 21:22:40 2010 -0800
+
+    set a name and join a game
+
+commit 4fbba557769213200bebce239c62b52b8b6e7e51
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 08:02:50 2010 +0300
+
+    test castlings
+
+commit bfc767de58691154332fb0c7e3c4760e0b65b613
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 08:01:02 2010 +0300
+
+    black castling code was wrong
+
+commit 1d937560e55d6a5b669d4ff3d5128dc154490f39
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 21:00:38 2010 -0800
+
+    some joining code
+
+commit c15f63d92bad3dabb9fcdc840a2b14e4a32d4a54
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:52:23 2010 +0300
+
+    king will now return castling moves as available (almost completely correct)
+
+commit 7fb13de3a44e1d81e36e60a7296edadfd3be96c8
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:51:43 2010 +0300
+
+    game state actually has to keep track if white AND black kings have moved, and both rooks have moved (for castling)
+
+commit 67b96ceefc90e06dad659b3ab4780e6894eabeca
+Merge: 47f8f4e ca97cb4
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 20:39:45 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit 47f8f4edf974ec3119af5b590b58b82fd5b48277
+Merge: 36db8c5 02a2b04
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 20:39:08 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit ca97cb403a3d21a05881deec4bb125278b909a1b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:37:33 2010 +0300
+
+    get rid of movechecker here too
+
+commit 02a2b04a0f8d3e0115e5763f526ad76c419fb49a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:36:33 2010 +0300
+
+    movechecker no longer necessary
+
+commit 37331b6ad83f60d96e705013fb438d8df7619d94
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:34:04 2010 +0300
+
+    highlight selected square and available move squares
+
+commit 2585f1683013099d8058bb20bb80f5dceb5cadfd
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:33:36 2010 +0300
+
+    player's functions get called on x,y not squares
+
+commit 5b6f55f8e08b3953a0586c198578f64983f10e80
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 07:33:17 2010 +0300
+
+    pass players to viewer
+
+commit 36db8c5791fcfae1541d418e0cf05876d61bddff
+Merge: d12fea6 c506b8f
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 20:17:37 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit db649b58267c6c7165e7b7598785ec051f5b214a
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 20:13:52 2010 -0800
+
+    empty labels as a prelude to joining
+
+commit c506b8fd28957cd9066e9af4fa0ace407de89d48
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 19:58:30 2010 -0800
+
+    thumbnails face the right way on the right grid
+
+commit 5608b0ec3b6bb85363b3995da89dbbdd5e2dc408
+Merge: 37d565b c506b8f
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 06:58:14 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 37d565b4e1e06353092d26e779ca02fd1c349d2d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 06:55:58 2010 +0300
+
+    highlight the clicked square
+
+commit bcf926206cca94a5da383e3bd362a60b0f8a4e14
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 06:19:41 2010 +0300
+
+    red is crazy on eyes
+
+commit d12fea66d4f1682c3f5a4a3d0e7e2eb16481f021
+Merge: 12e6259 3b55c5b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 19:09:08 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 12e625961d77ccdb137f8cf490296a3084e8d274
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 19:07:37 2010 -0800
+
+    Made a stab bubble
+
+commit 7616f8764136e85e3d032a06b1872652bcf8544e
+Merge: dac3662 12e6259
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 06:07:24 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 3b55c5b6ec86ffec7f9942073584938518e6fb1d
+Merge: 87a32aa fa40829
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 19:05:20 2010 -0800
+
+    multi-projection now
+
+commit dac36620d906110b9fd8ef11f79337648a67566e
+Merge: a3db2c4 3b55c5b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 06:04:03 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit a3db2c41621b3fff2a28a6f715a3de91dfb76f56
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:58:25 2010 +0300
+
+    MoveGenerator now takes a new argument
+
+commit 87a32aacaee91007e1e807fdeb3c587415283080
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 18:55:09 2010 -0800
+
+    topside checks for w and b
+
+commit 87a3083745c5ef0ce9772737ed6947d8de6881be
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:53:41 2010 +0300
+
+    .pos for .position
+
+commit 6a90ea071e846a0145fa042fd5e2f6de1047495f
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 18:44:02 2010 -0800
+
+    topside works for the big board
+
+commit 79ca500f9838a45c7117489872be566fe78db1ff
+Merge: 729c9fe 6a90ea0
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:43:08 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 729c9fe178691648f4476066d604dd032c93272b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:42:09 2010 +0300
+
+    en-passant works from black side too
+
+commit 1208adfcf9f1a6ed1abbc35b9f3406e76171b7dd
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:39:30 2010 +0300
+
+    white en-passant
+
+commit b0c1367266a65f49204d7a965703b14e5a630a81
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 18:37:09 2010 -0800
+
+    first part of the topside puzzle
+
+commit fa408290e10dcdb61962ada26f38dee425affb48
+Merge: c03e192 fc0418b
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 18:35:27 2010 -0800
+
+    merged that shiz
+
+commit 80e33c9c9209ebf0f668d7865655d20b480eb62a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:35:11 2010 +0300
+
+    oops, forgot to index [0]
+
+commit c03e19200c38706a61a36301a987d5966aebf645
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 18:33:13 2010 -0800
+
+    trapezoid now looks like trapezoid
+
+commit cee4054972f88d6992076ba06f5d031ac4f33da5
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 18:32:18 2010 -0800
+
+    remove flicker, piece sizes
+
+commit e2eabdcf26549748191b478e38c8b5bfc0ad0954
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 18:27:02 2010 -0800
+
+    use the smallest dimension
+
+commit 57ce3abdbc29abd9786a7d04ffbcf8335c5e94ac
+Merge: 04f0e77 fc0418b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:22:05 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit ce8a393f1f1da39581728b03862bb4f5f86016f3
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 18:21:50 2010 -0800
+
+    chessboard resizes
+
+commit 04f0e77b8a56b312e541d7ee84b52705e728167b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:19:36 2010 +0300
+
+    this move generator works on all tests, must be working
+
+commit 383d3c2933736100a1367cfd040b7ad8b8403898
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 05:18:39 2010 +0300
+
+    add king tests
+
+commit 1260f291bc5d63c4b38691ef0e073c45114abdf6
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:58:01 2010 +0300
+
+    add a test where pawn can move only one square forward
+
+commit fc0418b84ffda8e325d84426d3831a79234cb443
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 17:57:39 2010 -0800
+
+    critters plotted!
+
+commit a498900ba6243bfa28e018dac0c2993288820dd8
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 17:51:07 2010 -0800
+
+    Should now render a trapezoid
+
+commit e3f7127618f89ec8fb1208db90406aefb27d76de
+Merge: 16bc110 2f33216
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 17:38:01 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 2f33216140a142ea44378913177b9acb3b6f0324
+Merge: d9ce4a9 9f04f16
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 17:32:20 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit d9ce4a90aa940cfca1076d6a9567c358620746c7
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 17:31:32 2010 -0800
+
+    draw a checkerboard with a dummy transform
+
+commit 16bc11001f14c9e2b6ec7b7f6726b41b2d37c08d
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 17:24:24 2010 -0800
+
+    Changed project a bit for great justice
+
+commit f892dc9bb5aea0c1ebc27189a6a272c1d1208e53
+Merge: b0f9f3b 9f04f16
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:23:24 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit b0f9f3bf01c02c9b7b8f0164ff72a8cc14c67603
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:21:29 2010 +0300
+
+    add no knight move test
+
+commit 9f04f16b6168a79ffd31cad79b3aebef90c2de00
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 17:20:38 2010 -0800
+
+    added projecting function, not sure how to hook it up yet
+
+commit 8ea46681082645d3d8b4684edb87ffa85ef6b1a3
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:18:49 2010 +0300
+
+    make sure knights don't capture their own pieces
+
+commit 2c8cd047409b6bfed8df6987a51d6c867ec88602
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:04:31 2010 +0300
+
+    concat was a no-op
+
+commit fd86f536a8d7e04cd5a65b7cb61644ff722a6bf9
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:04:15 2010 +0300
+
+    knight moves
+
+commit 53d5a0509d1e32ad5ec00826569dda4df7c294c5
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:04:08 2010 +0300
+
+    bishop moves
+
+commit eaf331e09417269810dfca890182d881168d8be0
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:04:00 2010 +0300
+
+    queen moves
+
+commit 88387b1e4fc5a4049fc998d459805c0f17fa8330
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 04:03:51 2010 +0300
+
+    rook moves
+
+commit 9eadd944a7e446f83fcfd45b3f575ef0ca172bed
+Merge: 2010661 5a2ed58
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 17:03:16 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 5a2ed581300208b1163516c7492ed3932191fb5c
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 17:02:04 2010 -0800
+
+    more *dignified* svg pathstrings
+
+commit 2010661605f297bd9216a71c6a17d8f5285f79dc
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 16:59:53 2010 -0800
+
+    Man how could I have forgotten le splat?
+
+commit 9c2e2bc053d1794f800664b9c32ae14389634719
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 16:54:46 2010 -0800
+
+    Pow was broken. fixed.
+
+commit 84f1db0dbbf966a20f35199b28041a7d0bcab68c
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 16:42:33 2010 -0800
+
+    draw lines on the big board
+
+commit 078e64fdddcd9895ae05b2366cf05ad607bd0036
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 16:31:27 2010 -0800
+
+    generated new thumbs
+
+commit 1b72e6cb9f2d3124f2edd6838bb82109a2b76a99
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 16:29:34 2010 -0800
+
+    Made fancy black units
+
+commit 2a7254fce5fb8145c618211549514227c502f54b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 03:28:07 2010 +0300
+
+    pass state and true for king check to MoveGenerator
+
+commit f095cf158ef69b87b5eefe3b9e2b0a157310e40a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 03:27:35 2010 +0300
+
+    detect if my move doesn't put my king in check
+
+commit 22616ae681ee116c8a188e72ff3f34ddf9af039a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 03:27:21 2010 +0300
+
+    this made Board have circular refs when I needed Board in move generator
+
+commit 8e2944edd47035dc8ae5b4bc8c493827cf42e4b9
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 16:16:19 2010 -0800
+
+    White pieces now all prettified
+
+commit 16bcde2d60ed97f9491c11433e5163e2715bb011
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 16:05:35 2010 -0800
+
+    canvas setup for the big board
+
+commit 6455c8b5eeec6582c9009afca1781e77ef792e91
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 15:54:39 2010 -0800
+
+    colorins on the white knight
+
+commit ee2d83ef7f1c73d32f554ca54b1f47187ba114cc
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 15:49:33 2010 -0800
+
+    accents and details on bish and king
+
+commit 0c15ec31a61fd38eaa8b9ffff7cd3f490e2f4179
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 15:39:35 2010 -0800
+
+    fade in for new viewer
+
+commit 18b8850e115a37eb3fe5f25b50c0b283f3e00805
+Merge: 77255e4 724f70e
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 15:22:03 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 724f70ea5c2f6d8ef5183d80c07da17bdf9bf7ca
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 15:20:59 2010 -0800
+
+    ff isArray bug, css border fix
+
+commit 77255e4c71ac82ca9f7b95ee63789a1d03c1d10a
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 15:16:54 2010 -0800
+
+    I'm 95% sure that something along these lines will fix the firefox node badge bug
+
+commit 83e72448a0249ac88087ed7b90554f9629ac7128
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 02:04:27 2010 +0300
+
+    don't think we need kingInCheck
+
+commit f07709a6620341caa27eaf92b37133242c3ba7fc
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 15:02:11 2010 -0800
+
+    generated thumbs for board flip
+
+commit 056726127c289a55346075e1c1b94d5db71473c3
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 15:01:02 2010 -0800
+
+    changed thumbs for flipping board rounds
+
+commit 75d8e4ab049c90f8a397b22bde5e12595d0ee9fa
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 14:55:53 2010 -0800
+
+    label control
+
+commit 4e4bcd611167d79adf3c3eb94e7473e002fce941
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 14:38:21 2010 -0800
+
+    reindent, removePlayer
+
+commit 26c442cac07f45bacab7dd5b6b8e965a90a83539
+Merge: 2d2c6f9 943720d
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 14:27:24 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 2d2c6f9647743d41df595f814ca0165a6a4bf350
+Merge: a036724 4d860de
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 14:26:11 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit a036724dbc1b7eafce17f7fc4e4eed2fc52a715c
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 14:25:45 2010 -0800
+
+    draw player names above and below boards
+
+commit 943720d32d2e89be3b63d23a15a3353e7b9b3006
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 14:21:15 2010 -0800
+
+    brightened things up EVEN MORE
+
+commit e9ab27050db40d4641954c6672a88510ad5a9db7
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 14:13:18 2010 -0800
+
+    regenned thumbs
+
+commit 4d860de48fcbad26e4b63e01ba0d3698881ed7a7
+Merge: e4ba01c e9ab270
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 01:12:44 2010 +0300
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 8d4e59e72920f988b77b9b2e75f7b53982f5d445
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 14:11:30 2010 -0800
+
+    Accidentally committed a bunch of bullshit
+
+commit 6bb030770944aa74238359fba5c8735707130173
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 14:10:43 2010 -0800
+
+    made a shell script that helps quickly replace colors--intended for quickly generating black pieces from white.
+
+commit e4ba01c412111c22cffe9678dc5eb1ee7c46ef9f
+Merge: e67a9bb c361fcb
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 01:10:21 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit e67a9bb4711cbdc4d8db7659d3b4df8dda00f2d1
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 01:02:00 2010 +0300
+
+    added board and basic pawn move tests
+
+commit 766cb6aa3c468297f456e815e0d7a1e444e85523
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 13:59:23 2010 -0800
+
+    brightened king
+
+commit 625f8eaa6b706c098fdc5df72cac97b6dbe3d4e3
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 13:57:19 2010 -0800
+
+    brightened bishop, white
+
+commit 67ac8c916b733f1a92c7e0352f6b642dafda1493
+Merge: 147ccbf c361fcb
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 13:50:42 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 74273bdd10fc1623f16240032ae953e9331ac56c
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 00:48:41 2010 +0300
+
+    reverse queen and king
+
+commit 37e51386459d23c7b07d7e69a831a9b1a314ef31
+Merge: c361fcb 147ccbf
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 13:36:16 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit c361fcbcb015bf84d0a08d1ac9f68d9d01002166
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 13:30:35 2010 -0800
+
+    board animation works in thumbnails
+
+commit c573451455953b5738450f7dd12bb675400d38da
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 13:21:22 2010 -0800
+
+    now catching events on the client
+
+commit dd86899bd6f0e2df2692c50092b0d54959ca7eb5
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 13:14:20 2010 -0800
+
+    toggles and doesn't crash but client doesn't see events
+
+commit df61c519354655185ebe261556af619425352250
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sun Aug 29 00:02:26 2010 +0300
+
+    remove this old non-test
+
+commit 0d866792e681cb61376244e8f1dd93ea98f5312f
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:53:18 2010 -0800
+
+    toggle the white knight for testing
+
+commit c681d68ec04d91a4b5c5d7c5f31924576efdd50d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 23:53:08 2010 +0300
+
+    don't check KingInChess here, check it before returning all possible moves
+
+commit 147ccbf084eb6f82d93ba033060cd7893a2e223d
+Merge: ee0da96 368fb8a
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 12:52:54 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 7b368466a145f5dd86d425a4c8262aba277d2554
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 23:48:25 2010 +0300
+
+    half-working king move generator
+
+commit ee0da96030f820f1e148b5d11ce9de0a3a536f45
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 12:47:20 2010 -0800
+
+    should have transparent thumbs for black AND white. gen_thumbs.sh sucks, but who cares right?
+
+commit 81747e24f7cc0217b025afa39320525b0fdef818
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 12:43:35 2010 -0800
+
+    Thumbs should be transparent now
+
+commit 368fb8abec6cb951b41ef507da1dbe210dad03fe
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:37:20 2010 -0800
+
+    irc
+
+commit db0164a3d9feacafcf458b18e2696076cb663a61
+Merge: 6bb137f 368fb8a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 23:37:04 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 6bb137f5a0d0e14bf7a2c768f371ad27f1fd327c
+Merge: 051a42c 0f0b24b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 23:36:59 2010 +0300
+
+    resolve merge conflicts
+
+commit 5dc3100d06f7f9d12e2ddf51801a123b5f7dee7d
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:29:40 2010 -0800
+
+    bundled voteko image
+
+commit 34de2a0131a46da4af990a32a32718e977de88e8
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:28:12 2010 -0800
+
+    create player correctly
+
+commit d37710b6fa0040b7d71b4416073451335cb30ab6
+Merge: eba5a22 051a42c
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:14:42 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit eba5a22be0cc81f4ed80b94fdbf03a0eea700b82
+Merge: 0f0b24b 1b35321
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:14:15 2010 -0800
+
+    merged with pkrumins
+
+commit 051a42c9be42c1eda7d989ddd350f5b127c62bde
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 12:07:10 2010 -0800
+
+    Does this fix the board layout promblem? Flipped kings and queens.
+
+commit 0f0b24ba4003f80cff5702c7f6ca17f9eddf5949
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 12:06:36 2010 -0800
+
+    an event system all up in this
+
+commit 707aadfd38c31d775535f886373cdf8a96f4dc10
+Merge: e0c0b78 1b35321
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 12:05:50 2010 -0800
+
+    Merge branch 'master' of git://github.com/pkrumins/node-chess
+
+commit e0c0b78ca0da3476d5dcb8ccfd416c708d4af1b9
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 12:04:00 2010 -0800
+
+    some basic cartoon voilence baloons
+
+commit 1b35321e21e956193a4d8c0635da8342e79a5332
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 23:02:22 2010 +0300
+
+    knight moves
+
+commit 1401afca233f88e05a1bc992ebbd4172d7bfd97d
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 11:56:17 2010 -0800
+
+    copied jquery into vendor and using node's event emitters
+
+commit 81426c2528280896a8fe2a38741f99750cce2113
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:52:44 2010 +0300
+
+    bishop moves.
+
+commit 19a5ab3e6e5016167964629fadad05a5ba2828a1
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:43:38 2010 +0300
+
+    forgot break everywhere
+
+commit 6673a1178962e08d2d4406fa16bc7354b92a595e
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:41:58 2010 +0300
+
+    rook moves
+
+commit 09ddcbe9c6f9f58ab8e88f2939fb74c001c396c8
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:37:21 2010 +0300
+
+    added queen moves, which is union of bishop and rook moves
+
+commit 830a5f9effb698ef44d8502bc99eec5b804d36b0
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 11:31:44 2010 -0800
+
+    A puddle of blood--gross!
+
+commit c94c8fa8e489718b84307a7de45fbad4f7663aa6
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 11:20:14 2010 -0800
+
+    Used imagemagick to generate some png thumbs
+
+commit 6f084737d21cb2180d52d72174f0f5d538ab39ea
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:17:40 2010 +0300
+
+    no need for the whole board for movegenerator
+
+commit 694b0a838087039c8d4eae239f3adcf07d1565bd
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:17:23 2010 +0300
+
+    if pieces now have x,y, then after we move them, update their x,y, too
+
+commit 0789cd8ec6886d70d84fde648bf87396cfe20fdd
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 22:10:18 2010 +0300
+
+    generates all pawn moves now
+
+commit 1c63ef6f883757eba1c97f634e95bc0a71d59c04
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 21:53:45 2010 +0300
+
+    still had e and w mixed up
+
+commit c18b6d076a26fe00cf16251f72f0d935cbc024f8
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 21:51:54 2010 +0300
+
+    n e w s logic fix
+
+commit 74b4b3d6bb003d9d42216324163368e9de811bc1
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 21:35:47 2010 +0300
+
+    remove squareAhead, remove weird check
+
+commit 075b91abd01fca38f01ec04cb24fde42e5e69c86
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 21:32:59 2010 +0300
+
+    make self.at public again, returns the square at x,y
+
+commit 605706437404df2a8b271580dc23d5bc6e3864e9
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 21:14:09 2010 +0300
+
+    fix .w and add .se .se .nw .ne
+
+commit b8ecfd2106f0bc11e4401d3c5c8ff3169f6e40ca
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 20:51:59 2010 +0300
+
+    be clear of what properties a piece has
+
+commit cb4072f737df61127c27345ad9ac195915986e2b
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 09:36:49 2010 -0800
+
+    no stroke on thumbnail outer
+
+commit 0c70b3b08553be3718e42b15cbc5928bdb418998
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 09:17:41 2010 -0800
+
+    watch mouseover for thumbnails
+
+commit eccbec17d40bc8c98b1854eacdd2a4eb39de3eef
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 08:46:38 2010 -0800
+
+    lighter tiles
+
+commit 0837ab4ece74e12fb9ae8625860ee97aac75ab50
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 08:39:27 2010 -0800
+
+    vote badge and random player name
+
+commit b7166ca9f0382277efed7d903480ff2415603c18
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 03:20:30 2010 -0800
+
+    thumbnails now use svg sources. Given time, we may want simpler thumbnail pieces. Also, pieces are pretty dark!
+
+commit 1c8d896aac09ac12459533ee45c24bc322e0b813
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 03:18:17 2010 -0800
+
+    colored black units
+
+commit 8da93622aee1175fe990c63e315bd40d98a9ed45
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 03:11:00 2010 -0800
+
+    Cleaned up extraneous pngs in black
+
+commit 759923991572cedb0f8c1b3f087e6d65d138c811
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 03:09:44 2010 -0800
+
+    removed extraneous pngs
+
+commit 73fbb8f4e0925b41d4a0b9f865a8e34e6930a072
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 03:09:04 2010 -0800
+
+    vectored rook
+
+commit 04d9893e06004860ad95fa8da89c428ec42bd85d
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 02:51:50 2010 -0800
+
+    traced pawns too
+
+commit 370e694b75f0bafb5dee61130097b9af6b059288
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 02:43:19 2010 -0800
+
+    traced ponies, white only
+
+commit 95d4362c3de08b9cdae823a259203ccb258f6769
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 02:34:23 2010 -0800
+
+    vectorized king for white, will do black later
+
+commit 31b73ad3d8a50c437ccaad8fe83aad579be5ef13
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 02:26:43 2010 -0800
+
+    traced bishops. Colors need work.
+
+commit 3998893d591b9fd14db47a62adb77747d6360513
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 02:04:39 2010 -0800
+
+    *my* thumbnails are pngs
+
+commit 4512d12563a0079b46a6d029540cf751e0ead90d
+Merge: 32f10dd 6781c9f
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Sat Aug 28 01:41:50 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 6781c9f83a20a63923cecc5c543f9490d0fd7fcf
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 01:05:02 2010 -0800
+
+    text labels on the view page for now
+
+commit f483b66a96304f68d978b88e139448f3fc2cdfa2
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 01:00:12 2010 -0800
+
+    update move checker for piece => code field switch
+
+commit e9d186dd4cc3d01d88484b4a73bdc024cedd135e
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 00:48:44 2010 -0800
+
+    unified piece some more, got rid of printing since it doesn't work
+
+commit afabaa8ad1ca333aef58ada5c73413fbed4aedc0
+Author: James Halliday <substack@gmail.com>
+Date:   Sat Aug 28 00:02:35 2010 -0800
+
+    looks better with 300x300 thumbnails
+
+commit c0cdfe5384c32ee05d3275881be6d947a90d050d
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:58:38 2010 -0800
+
+    square higher up on the imports
+
+commit 32f10dd2122ca0d3bee227a1f845546e05d91e00
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:58:15 2010 -0800
+
+    removed the stupid basic pawn.svg from earlier
+
+commit d8f5d585d8472e95e3f04236f898679f53786d11
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:56:05 2010 -0800
+
+    accidentally all the xcfs, so :(
+
+commit c1bb18b8c1e1f3c3f7ea2fd4d6626d4182f140cc
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:55:53 2010 -0800
+
+    ./ again >_<
+
+commit 133cacfd6611f3c7f2e815fb2df3ad21f2a246e1
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:55:02 2010 -0800
+
+    made folder for xcf sources
+
+commit a650139debbc9464b016dd3c18a95888f6e9f961
+Merge: f1c4392 5d624b6
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:53:52 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 299e626240dcd92a56c78c89859a21fea18e2d6d
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:53:51 2010 -0800
+
+    inked king, back
+
+commit f1c4392d64ae7eef1a85e0cc0077557af5b8a497
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:53:37 2010 -0800
+
+    thumbnail grids!
+
+commit f0065b1ebcbf208c2d3f70416bfcdfbf650d4036
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:47:09 2010 -0800
+
+    traced king, now teething knife
+
+commit 5f4db54be643f31bdddf44ffa456764b270e5577
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:44:46 2010 -0800
+
+    tiling css blech
+
+commit 5d624b6ee60bc15205a917b13feb264f16e3e6b7
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 10:43:58 2010 +0300
+
+    generate moves for pawn capture to the left and right
+
+commit c6bf83d5c2107314f4009b46c0f02e140061193d
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:37:57 2010 -0800
+
+    Droppin frames^H^H^H^H^Hpngs (from the earlier accidental baleet)
+
+commit 4b89fcd94af70b1f036f67b277f5854309e449f0
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:32:36 2010 -0800
+
+    traced rook front earlier, whups
+
+commit c4210d1948baee82923be13a49f92c3bbf12fb3c
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:31:05 2010 -0800
+
+    traced rook, back
+
+commit aa8b8af360a3d8c7e7b21661101778ff32f5568f
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 10:29:01 2010 +0300
+
+    pawn moves one and two squares forward
+
+commit a3668e1d663c3999a823a7ed35c8c834c322b1b0
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 10:28:15 2010 +0300
+
+    use squares in .moves and .check instead of sx sy dx dy
+
+commit c4220615f063f419c305751bd5d31e45f0224e45
+Merge: 55d68b8 07620d6
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:15:50 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 07620d6c694a420732d56018c9bb7a9118f27860
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:11:02 2010 -0800
+
+    traced bishop, back
+
+commit 55d68b88b69b040ed726774cf3e7214b368d7044
+Merge: 3405172 5985e1e
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:08:57 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 34051722eedb4f404ac61e550107e9946c02b0d4
+Merge: a4f4e60 a4496bc
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 23:08:18 2010 -0800
+
+    set pieces separately from squares, web code works again
+
+commit c6bc064f80c9117e8874cedf44187cc31d10fd0f
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 23:03:55 2010 -0800
+
+    traced bishop, front, and added catholic collar thing
+
+commit 17d6e35027f0d1903b76317121b7b8cd0167d1a6
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:54:43 2010 -0800
+
+    Turns out I had a lot of mess in the images folder. Whups
+
+commit 5985e1e807b2268327340e3bd82896e35a3d0d46
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:44:41 2010 -0800
+
+    traced knight, back
+
+commit be59641ee50c0ea5c0c6cf346fbed1e4ff103d58
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:39:07 2010 -0800
+
+    traced knight, front
+
+commit 535aea6604a7fde41d2b2d94989d09bcf98d74ff
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:31:59 2010 -0800
+
+    traced queen, back
+
+commit 0ce4b43c5c6c0883a9983299c456a96382c4e81a
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:23:14 2010 -0800
+
+    traced queen,front
+
+commit a4496bc005aed5ff6db02a7f9cfaa86f01a94357
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 09:14:59 2010 +0300
+
+    simple pieces now { color : 'b', name 'r' } for example
+
+commit fc6d886f1d6ab2867bd23078440397d5c4f0a89d
+Merge: cd9a5df a4f4e60
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:13:10 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit cd9a5df51326299485ba3d58bc988b017afcd34e
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:13:01 2010 -0800
+
+    traced pawn, back
+
+commit d59a42fe74763a16a1b7f2216281dbea8677e43c
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 09:12:23 2010 +0300
+
+    get rid of piece.js at all
+
+commit a4f4e60e72fbd4c8f06f5ab61d6c83a9a9dbf5e4
+Merge: 59a6dd3 34f7b1f
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 22:11:32 2010 -0800
+
+    pieces, not eachPiece
+
+commit 3b73e3ae2bf84043f4844459271dbaae5511f5dc
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 09:07:05 2010 +0300
+
+    get rid of all the temporary variable stuff
+
+commit ad1cbbbb232e0cef7a5117cbd64e4aa35778bed3
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 22:03:56 2010 -0800
+
+    traced pawn, front
+
+commit 59a6dd32f5b2832e90f78b18ff5f3c5356fd5675
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 21:58:59 2010 -0800
+
+    squares fixed but a circular ref persists
+
+commit 34f7b1f8c186ee85495f3f223bcc8c1684cc9cd9
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 08:55:49 2010 +0300
+
+    Thinking at Row level now at this place
+
+commit 8bf959944396ce984a38c4121f9fff22ef03d3eb
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 21:54:20 2010 -0800
+
+    == 8 fix for square construction
+
+commit 986e8f1aea3706c77a2bfa004227e8206811f036
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 21:54:01 2010 -0800
+
+    rearranged images, added knight
+
+commit 9b80a70581d9636fc4c73cfff75a530ec1f57559
+Merge: 5905016 c9f15b9
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 21:49:51 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 5905016ad720993f7f97bb073084a51f8a1627d7
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 21:46:24 2010 -0800
+
+    load the squares for the browser
+
+commit c9f15b9651950fdc6206e3a8427a0e8cb4977609
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 08:44:56 2010 +0300
+
+    should fix invalid position for square
+
+commit 4a7a10bd1e0167b275a35b8bc8fcf24e6892d786
+Merge: f88abc6 c703ff4
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 21:40:10 2010 -0800
+
+    fixed the ./ thing back
+
+commit f88abc6ec942f53547e76c973b38168e7a40b127
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 21:38:34 2010 -0800
+
+    hot raphaeljs action
+
+commit c703ff4ad07c39818e6b6e37281a1b044cfd6c52
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 08:35:34 2010 +0300
+
+    add .clear, rename .ahead to .squareAhead and return either .n or .w depending on whether the player is white or black
+
+commit 8be650fd282f0a5fa55afd13e15bb4a08f7307fb
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 08:33:21 2010 +0300
+
+    keep game moves in game state
+
+commit 747d656cb3855ba77a56452845179745f11ebcb3
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 08:31:51 2010 +0300
+
+    use Squares now.
+
+commit 21a53541c8c716069301d4c5d7a021c076554603
+Merge: 1c152c6 57aaef7
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 21:13:21 2010 -0800
+
+    Merge branch 'master' of git://github.com/substack/node-chess
+
+commit 1c152c68fa4af32c0d8aa6e34dd752db0d5762e2
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 21:09:52 2010 -0800
+
+    Scans of basic units. Will clean up and probably change directory structure based on what James and Pete are doing
+
+commit b1842cb4104f93d5e31dc81074fc5fbf96aae217
+Merge: e548d60 1b2eb88
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 20:55:28 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit e548d600e99e73f43bb8d9ee95647be60e6f37a4
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 20:55:07 2010 -0800
+
+    getBoard for game
+
+commit 1b2eb88246a2fffeca9a22bcf2c91012dcb45615
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:45:22 2010 +0300
+
+    added Square
+
+commit b6ceeda06afde73237b24d033b6175c6ec5b7592
+Merge: 00d2b7a 57aaef7
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:38:37 2010 +0300
+
+    resolve merge failures
+
+commit 00d2b7a0738866133250f909be8d7c2c36e358d0
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:35:04 2010 +0300
+
+    rename inChess -> kingInCheck
+
+commit 57aaef78eb15ba97de3834f86da7b53911818a4c
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 20:33:53 2010 -0800
+
+    iterate over pieces
+
+commit 0e7cfea0d3969b19dc8f1e5f84dbbcfd53d4a0e0
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 20:13:24 2010 -0800
+
+    get a pieces list from the board
+
+commit 7410b7ccaccc9a44c72e3eb51226ade591064b43
+Merge: d3acf12 9363245
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:12:33 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit d3acf12ae68073abf128951f0d5546acb90d8523
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:11:38 2010 +0300
+
+    more game state. added code for check function, but have to factor it out to MoveChecker probably (will see)
+
+commit 9d7f009ad7ddf817a2ffe10825a3ec80836402b8
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:10:39 2010 +0300
+
+    move tests to test
+
+commit 078516ef9868ef37cd05d8df596e8ea6a96e11e2
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:00:31 2010 +0300
+
+    hacking on Game, added GameState, .moves and .check methods
+
+commit 819729e00b0c9ed13463ca991a1d587463e20151
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 07:00:12 2010 +0300
+
+    make sure Board and new Board are the same. add moves function.
+
+commit 93632458594a890be652c8be7f0f152a57a0d166
+Merge: 1d7f491 cb555d1
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 19:40:50 2010 -0800
+
+    Merge branch 'master' of http://github.com/jesusabdullah/node-chess
+
+commit 1d7f4917daf41a4e5d494a0b1a5466552bda925b
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 19:40:11 2010 -0800
+
+    load piece module
+
+commit 02227b5085aa9883525b5e0136853bfbf3dedb27
+Merge: 840699b a8f5234
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 19:39:38 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 840699b3b27a36dd51984e4192145464bbbc69a4
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 19:39:32 2010 -0800
+
+    a topbar for the ui
+
+commit 88d280feb0bceba8dfde0375f8bcc8df04299950
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:35:44 2010 +0300
+
+    stabs for all possible piece move generators
+
+commit 67773241641a31b3fcb9170e28e34b675458573d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:33:51 2010 +0300
+
+    add .color and .pieceName string values
+
+commit cb555d13048ec369c95c4a17ac31967f1843bf4c
+Author: Joshua Holbrook <josh.holbrook@gmail.com>
+Date:   Fri Aug 27 19:30:07 2010 -0800
+
+    Made a crappy pawn. Pure simple svg, though.
+
+commit 3783a8bf6f0fdd5f87c5403a197aef33a6835ee4
+Merge: b0b755b 8bb0580
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:28:16 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit b0b755b325a028df0f867d1425c3349fd65bdc55
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:26:40 2010 +0300
+
+    no logging. comment what the slice is for
+
+commit a8f52342860dc752af0c96a406cc47d0736037c9
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:25:27 2010 +0300
+
+    board now uses Piece
+
+commit f48937dcabb94e9c08dd8b35f9d65bccd67d899b
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:25:16 2010 +0300
+
+    new Piece now works the same as Piece
+
+commit 7d8d4c3315d51d6a0c1ff81981b4e0477509059d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 06:24:11 2010 +0300
+
+    piece now has .shortName
+
+commit 8bb0580ca0761c9da5e60ba97a073777bb8082c6
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 19:16:55 2010 -0800
+
+    hide exported in require() so it doesn't get redefined, movechecker works
+
+commit a80f2a1b29f356d0c1d025a7578d19c9e182dbeb
+Merge: 99dfc5d 7358e02
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 19:07:50 2010 -0800
+
+    Merge branch 'master' of http://github.com/pkrumins/node-chess
+
+commit 7358e02c4fea038aee1d078e90f1ba5821e0297d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 05:59:14 2010 +0300
+
+    abstract pieces
+
+commit 99dfc5d294aabe58b0a75c1fe7c22958bbee6fdc
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 18:49:31 2010 -0800
+
+    whoops forgot to add the client
+
+commit a24b551fd091c316b0f05d29efedf9a1d1df78b8
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 18:48:03 2010 -0800
+
+    dnode test
+
+commit c8e483e1f170b8061349675a7e0faa1473d3acf8
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 05:26:47 2010 +0300
+
+    MoveGenerator stub
+
+commit 09edf14b6ce0865a42380519e464d662a246821a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 05:21:12 2010 +0300
+
+    move lib/movechecker.js -> lib/game/movechecker.js
+
+commit 0ab906840be8f5a99cd011e0f8a803ee105dfc15
+Merge: 46af3c7 dde7778
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 05:17:34 2010 +0300
+
+    Merge branch 'master' of http://github.com/substack/node-chess
+
+commit 46af3c7b1e9623e8361cab1b853431cba17cc04e
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 05:16:47 2010 +0300
+
+    nasty pawn move checker
+
+commit dde77788b79d6f440ca3e7eef2f722e5dac299b1
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 18:11:21 2010 -0800
+
+    touch
+
+commit cce9ccada533262b309ca09f13fe25fe217b99cd
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 18:01:13 2010 -0800
+
+    blarg
+
+commit 73e99cb0902e69c8b157ef85b7984d951e5361ab
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 17:52:13 2010 -0800
+
+    require.paths hack to get joyent working
+
+commit aebe96cd1765ae2be77b766cfc99011ca3f30ecc
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 17:43:44 2010 -0800
+
+    crazy require/include business
+
+commit dc0cee4967eb049f12daf96fe10813f4655c183d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 04:33:50 2010 +0300
+
+    not board.empty
+
+commit 8d3eb70d79fab24f905efe55f9781585813b31ee
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 04:32:42 2010 +0300
+
+    remove space
+
+commit 6f6ce4c4bc51ad6b5f3636e30eb0c4f9d36b5957
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 04:30:50 2010 +0300
+
+    remove space i put there for unknown reasons
+
+commit cfe008dd21f0db0d42c582b7f8b7a94ed85e31c1
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 04:28:48 2010 +0300
+
+    make sure dstPiece was not the same color
+
+commit 03b7f89f78d433dca42ccef87dfb4eb8adbfd1f9
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 04:26:28 2010 +0300
+
+    add InBetweenCol and InBetweenRow that determine if there is a piece between two squares on a given column and row
+
+commit cc00fd664cf6eac0880a8b1f18355b6f5b1096b5
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 04:25:26 2010 +0300
+
+    add empty() to check if square at x,y is empty. make pieceAt return more info
+
+commit 81458311d49312770c8f51ae2a696cdfcab0ba8a
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 03:54:39 2010 +0300
+
+    all piece stubs
+
+commit 56f9edfb514796a5c63cb7bc843c43cf1ec19e7d
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 03:54:29 2010 +0300
+
+    call MoveChecker. add pieceAt
+
+commit 6a9c6b5cefe586fe50083fbecda64f86bf4e3a7e
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 03:46:44 2010 +0300
+
+    MoveChecker stub
+
+commit 2a1dba5df5a744be18c242cb201c52a133c9b2e3
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 03:45:58 2010 +0300
+
+    check() stub
+
+commit b70385b6f745bcdf166c7d76285d8ddb17309316
+Author: Peteris Krumins <peteris.krumins@gmail.com>
+Date:   Sat Aug 28 03:32:05 2010 +0300
+
+    we got a basic board
+
+commit 970b16bef5019a8138ccc90be7ce26deeb8d1a1b
+Author: James Halliday <substack@gmail.com>
+Date:   Fri Aug 27 16:11:02 2010 -0800
+
+    simple connect server

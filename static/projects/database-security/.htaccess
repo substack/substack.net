@@ -1,0 +1,4 @@
+DirectoryIndex index.cgi index.php
+RemoveHandler .pl
+AddType text/plain .pl
+Options +FollowSymLinks

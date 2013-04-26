@@ -1,0 +1,14 @@
+.hash {
+    position: absolute;
+    background-color: red;
+    border: 1px solid rgb(127,0,0);
+    z-index: 5;
+}
+
+.point {
+    position: absolute;
+    background-color: rgb(127,255,0);
+    z-index: 10;
+    width: 6px;
+    height: 6px;
+}

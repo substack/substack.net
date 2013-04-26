@@ -1,0 +1,17 @@
+This script lists quotes given a particular id, with uris such as
+"http://substack.net/projects/database-security/quotes/?quote_id=8".
+
+The id however is passed directly through to the query's where clause.
+For the previous uri, the database executes:
+    select * from quotes where id=8
+
+Instead of just listing a particular post, by giving a quote id of "8 or 1"
+for instance, the query becomes
+    select * from quotes where id=8 or 1
+which is the same as
+    select * from quotes
+because the where clause is always true.
+
+All the attacker needs to do is visit
+"http://substack.net/projects/database-security/quotes/?quote_id=8 or 1"
+in order to list all the posts, including the secret one.

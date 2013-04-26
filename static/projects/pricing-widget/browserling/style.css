@@ -1,0 +1,109 @@
+.pricing-widget {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    margin: auto;
+    background-image: url(/projects/pricing-widget/browserling/images/pricing_form.png);
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+}
+
+.pricing-widget .note {
+    color: rgb(200,220,240);
+}
+
+.pricing-widget .plan {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pricing-widget .plan:hover {
+    background-color: rgba(110,50,130,0.3);
+}
+
+.pricing-widget .buy.button {
+    width: 201px;
+    height: 51px;
+    background-image: url(/projects/pricing-widget/browserling/images/buy.png);
+    background-color: transparent;
+    padding: 0px;
+    color: transparent;
+    border-width: 0px;
+}
+
+.pricing-widget .buy.button:hover {
+    background-color: transparent;
+}
+
+.pricing-widget .buy.button:active {
+    background-color: transparent;
+    background-image: url(/projects/pricing-widget/browserling/images/buy_pressed.png);
+}
+
+.pricing-widget .more .quantity .slide .runner {
+    background-color: rgb(90,80,120);
+}
+
+.pricing-widget .cc {
+    background-color: rgba(240,248,252,0.25);
+    color: rgb(30,40,70);
+}
+
+.pricing-widget .cc input[type="text"] {
+    border-color: rgb(30,50,120);
+}
+
+.pricing-widget .purchase.button {
+    width: 201px;
+    height: 51px;
+    background-image: url(/projects/pricing-widget/browserling/images/purchase.png);
+    background-color: transparent;
+    color: transparent;
+    padding: 0px;
+    border-width: 0px;
+}
+
+.pricing-widget .purchase.button:active {
+    background-image: url(/projects/pricing-widget/browserling/images/purchase_pressed.png);
+}
+
+.pricing-widget .purchase.button:hover {
+    background-color: transparent;
+}
+
+.pricing-widget .buy.button:active {
+    background-color: transparent;
+    background-image: url(/projects/pricing-widget/browserling/images/buy_pressed.png);
+}
+
+.pricing-widget .cc .busy-image {
+    background-image: url(/projects/pricing-widget/browserling/images/busy.gif);
+    background-size: 100% 100%;
+    background-color: transparent;
+    color: transparent;
+    width: 300px;
+    height: 31px;
+    padding: 0px;
+}
+
+.pricing-widget .success {
+    width: 369;
+    height: 500;
+    background-image: url(/projects/pricing-widget/browserling/images/account_upgraded.png);
+    background-position: center 80px;
+    background-size: 310px 420px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.pricing-widget .error {
+    background-image: url(/projects/pricing-widget/browserling/images/error.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.pricing-widget .error .message {
+    color: rgb(255,150,150);
+}

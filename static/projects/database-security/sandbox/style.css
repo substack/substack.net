@@ -1,0 +1,7 @@
+table {
+}
+
+table tr th {
+    min-width: 5em;
+    background-color: rgb(230,230,230);
+}
