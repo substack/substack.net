@@ -17,7 +17,7 @@ var staticd = ecstatic({
     showDir: true,
     gzip: true
 });
-var scratch = ecstatic(process.env.HOME + '/data/scratch');
+var scratch = ecstatic('/home/admin/data/scratch');
 
 var server = http.createServer(function (req, res) {
     if (glog.test(req.url)) return glog(req, res);
@@ -45,6 +45,7 @@ var server = http.createServer(function (req, res) {
             return staticd(req, res);
         }
         else if (RegExp('^/scratch($|/)').test(req.url)) {
+            req.url = req.url.replace(RegExp('^/scratch($|/)'), '/');
             return scratch(req, res);
         }
     }
