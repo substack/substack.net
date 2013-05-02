@@ -12,6 +12,7 @@ var glog = require('glog')({
 });
 var ecstatic = require('ecstatic')({
     root: __dirname + '/static',
+    scratch: process.env.HOME + '/data/scratch',
     showDir: true,
     gzip: true
 });
