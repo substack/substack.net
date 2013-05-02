@@ -10,12 +10,14 @@ var glog = require('glog')({
     id: 'http://substack.net',
     title: "substack in cyberspace"
 });
-var ecstatic = require('ecstatic')({
+
+var ecstatic = require('ecstatic');
+var staticd = ecstatic({
     root: __dirname + '/static',
     showDir: true,
     gzip: true
 });
-var scratch = process.env.HOME + '/data/scratch';
+var scratch = ecstatic(process.env.HOME + '/data/scratch');
 
 var server = http.createServer(function (req, res) {
     if (glog.test(req.url)) return glog(req, res);
@@ -40,7 +42,7 @@ var server = http.createServer(function (req, res) {
     
     if (!/^\/[^\.\/]*$/.test(req.url)) {
         if (RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {
-            return ecstatic(req, res);
+            return staticd(req, res);
         }
         else if (RegExp('^/scratch($|/)').test(req.url)) {
             return scratch(req, res);
