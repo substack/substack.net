@@ -15,6 +15,7 @@ var ecstatic = require('ecstatic');
 var staticd = ecstatic({
     root: __dirname + '/static',
     showDir: true,
+    autoIndex: true,
     gzip: true
 });
 var scratch = ecstatic(process.env.HOME + '/data/scratch');
