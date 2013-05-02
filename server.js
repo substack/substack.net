@@ -12,10 +12,10 @@ var glog = require('glog')({
 });
 var ecstatic = require('ecstatic')({
     root: __dirname + '/static',
-    scratch: process.env.HOME + '/data/scratch',
     showDir: true,
     gzip: true
 });
+var scratch = process.env.HOME + '/data/scratch';
 
 var server = http.createServer(function (req, res) {
     if (glog.test(req.url)) return glog(req, res);
@@ -38,9 +38,13 @@ var server = http.createServer(function (req, res) {
         }
     }
     
-    if (!/^\/[^\.\/]*$/.test(req.url)
-    || RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {
-        return ecstatic(req, res);
+    if (!/^\/[^\.\/]*$/.test(req.url)) {
+        if (RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {
+            return ecstatic(req, res);
+        }
+        else if (RegExp('^/scratch($|/)').test(req.url)) {
+            return scratch(req, res);
+        }
     }
     
     res.setHeader('content-type', 'text/html');
