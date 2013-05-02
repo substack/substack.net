@@ -17,7 +17,7 @@ var staticd = ecstatic({
     showDir: true,
     gzip: true
 });
-var scratch = ecstatic('/home/admin/data/scratch');
+var scratch = ecstatic(process.env.HOME + '/data/scratch');
 
 var server = http.createServer(function (req, res) {
     if (glog.test(req.url)) return glog(req, res);
