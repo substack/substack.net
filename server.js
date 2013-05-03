@@ -49,6 +49,7 @@ var server = http.createServer(function (req, res) {
             req.url = req.url.replace(RegExp('^/scratch($|/)'), '/');
             return scratch(req, res);
         }
+        else return staticd(req, res);
     }
     
     res.setHeader('content-type', 'text/html');
