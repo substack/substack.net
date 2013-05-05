@@ -68,4 +68,3 @@ var server = http.createServer(function (req, res) {
     indexStream.pipe(hyperstream(streams)).pipe(res);
 });
 server.listen(process.env.PORT || Number(process.argv[3]));
-
