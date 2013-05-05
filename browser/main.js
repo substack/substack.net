@@ -50,7 +50,7 @@ var showPage = singlePage(function (href) {
 var links = document.querySelectorAll('a[href]');
 for (var i = 0; i < links.length; i++) (function (link) {
     var href = link.getAttribute('href');
-    if (RegExp('^/').test(href)) {
+    if (RegExp('^/').test(href) && !/\.\w+$/.test(href)) {
         link.addEventListener('click', function (ev) {
             if (ev.ctrlKey) return;
             ev.preventDefault();
