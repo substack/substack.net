@@ -4,6 +4,7 @@ var qs = require('querystring');
 var fs = require('fs');
 var path = require('path');
 var archive = require('./archive.json');
+var renderArticles = require('./render/article.js');
 
 var glog = require('glog')({
     repodir: process.argv[2] || process.env.HOME + '/data',
@@ -41,6 +42,21 @@ var server = http.createServer(function (req, res) {
         }
     }
     
+    if (req.url.split('?')[0] === '/') {
+        res.setHeader('content-type', 'text/html');
+        var root = hyperstream({
+            '.articles': glog.list()
+                .pipe(glog.inline('html'))
+                .pipe(renderArticles())
+        });
+        var hs = hyperstream({
+            '#root': root,
+        });
+        hs.pipe(res);
+        fs.createReadStream(__dirname + '/static/index.html').pipe(hs);
+        fs.createReadStream(__dirname + '/static/pages/root.html').pipe(root);
+        return;
+    }
     if (!/^\/[^\.\/]*$/.test(req.url)) {
         if (RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {
             return staticd(req, res);
