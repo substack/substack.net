@@ -346,3 +346,19 @@ a:link img, a:visited img {
     bottom: 0px;
     left: 0px;
 }
+  
+.more {
+    margin: auto;
+    font-size: 2em;
+    padding: 20px;
+    background-color: rgb(255,40,40);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+.more:hover {
+    background-color: red;
+    color: white;
+}
