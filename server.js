@@ -12,6 +12,15 @@ var glog = require('glog')({
     title: "substack in cyberspace"
 });
 
+function blogStream (url) {
+    var params = qs.parse(url.split('?')[1]);
+    var list = glog.list({
+        after: params.after,
+        limit: params.limit || 5
+    });
+    return list.pipe(glog.inline('html'))
+}
+
 var ecstatic = require('ecstatic');
 var staticd = ecstatic({
     root: __dirname + '/static',
@@ -43,17 +52,9 @@ var server = http.createServer(function (req, res) {
     }
     
     if (req.url.split('?')[0] === '/') {
-        var params = qs.parse(req.url.split('?')[1]);
-        var list = glog.list({
-            after: params.after,
-            limit: params.limit || 5
-        });
-        
         res.setHeader('content-type', 'text/html');
         var root = hyperstream({
-            '.articles': list
-                .pipe(glog.inline('html'))
-                .pipe(renderArticles())
+            '.articles': blogStream(req.url).pipe(renderArticles())
         });
         var hs = hyperstream({ '#root': root });
         hs.pipe(res);
@@ -61,30 +62,7 @@ var server = http.createServer(function (req, res) {
         fs.createReadStream(__dirname + '/static/pages/root.html').pipe(root);
         return;
     }
-    if (!/^\/[^\.\/]*$/.test(req.url)) {
-        if (RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {
-            return staticd(req, res);
-        }
-        else if (RegExp('^/scratch($|/)').test(req.url)) {
-            req.url = req.url.replace(RegExp('^/scratch($|/)'), '/');
-            return scratch(req, res);
-        }
-        else return staticd(req, res);
-    }
     
-    res.setHeader('content-type', 'text/html');
-    
-    var indexFile = path.join(__dirname, 'static', '/index.html');
-    var indexStream = fs.createReadStream(indexFile);
-    
-    var pages = [ 'root', 'art', 'mad-science', 'music', 'code', 'me' ];
-    var streams = pages.reduce(function (acc, page) {
-        var name = page.replace(/-/g, '_') + '.html';
-        var file = path.join(__dirname, 'static', 'pages', name);
-        acc['#' + page] = fs.createReadStream(file);
-        return acc;
-    }, {});
-    
-    indexStream.pipe(hyperstream(streams)).pipe(res);
+    return staticd(req, res);
 });
 server.listen(process.env.PORT || Number(process.argv[3]));
