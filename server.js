@@ -43,15 +43,19 @@ var server = http.createServer(function (req, res) {
     }
     
     if (req.url.split('?')[0] === '/') {
+        var params = qs.parse(req.url.split('?')[1]);
+        var list = glog.list({
+            after: params.after,
+            limit: params.limit || 5
+        });
+        
         res.setHeader('content-type', 'text/html');
         var root = hyperstream({
-            '.articles': glog.list()
+            '.articles': list
                 .pipe(glog.inline('html'))
                 .pipe(renderArticles())
         });
-        var hs = hyperstream({
-            '#root': root,
-        });
+        var hs = hyperstream({ '#root': root });
         hs.pipe(res);
         fs.createReadStream(__dirname + '/static/index.html').pipe(hs);
         fs.createReadStream(__dirname + '/static/pages/root.html').pipe(root);

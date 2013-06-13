@@ -8,7 +8,7 @@ module.exports = function () {
         this.queue(hyperglue(html, {
             '.title': row.title,
             '.author': row.author,
-            '.data': row.date,
+            '.date': row.date,
             '.commit': row.commit,
             '.body': { _html: row.body }
         }).outerHTML);
