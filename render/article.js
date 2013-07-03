@@ -6,6 +6,7 @@ var html = fs.readFileSync(__dirname + '/article.html');
 module.exports = function () {
     return through(function (row) {
         this.queue(hyperglue(html, {
+            '.article': { 'class': 'article summary' },
             '.title': row.title,
             '.author': row.author,
             '.date': row.date,
