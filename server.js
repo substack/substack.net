@@ -56,6 +56,15 @@ var server = http.createServer(function (req, res) {
         }
     }
     
+    if (req.url === '/art') {
+        var index = trumpet();
+        var art = index.select('#content').createWriteStream();
+        index.pipe(res);
+        fs.createReadStream(__dirname + '/static/index.html').pipe(index);
+        fs.createReadStream(__dirname + '/static/pages/art.html').pipe(art);
+        return;
+    }
+    
     if (RegExp('^/[^/.]*($|\\?)').test(req.url)) {
         res.setHeader('content-type', 'text/html');
         var summary = req.url.split('?')[0] === '/';
