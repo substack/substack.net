@@ -56,12 +56,20 @@ var server = http.createServer(function (req, res) {
         }
     }
     
-    if (req.url === '/art') {
+    var page = req.url.split('?')[0].split('/')[1];
+    
+    if (page === 'art' || page === 'mad-science' || page === 'music'
+    || page === 'code' || page === 'me') {
         var index = trumpet();
         var art = index.select('#content').createWriteStream();
+        var file = path.join(
+            __dirname, 'static/pages',
+            page.replace(/-/g, '_') + '.html'
+        );
+        
         index.pipe(res);
+        fs.createReadStream(file).pipe(art);
         fs.createReadStream(__dirname + '/static/index.html').pipe(index);
-        fs.createReadStream(__dirname + '/static/pages/art.html').pipe(art);
         return;
     }
     
