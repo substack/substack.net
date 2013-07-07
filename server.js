@@ -1,5 +1,6 @@
 var http = require('http');
 var hyperstream = require('hyperstream');
+var trumpet = require('trumpet');
 var qs = require('querystring');
 var fs = require('fs');
 var path = require('path');
@@ -13,6 +14,10 @@ var glog = require('glog')({
 });
 
 function blogStream (url) {
+    if (RegExp('^/[^/]+($|\\?)').test(url)) {
+        return glog.get(url).pipe(glog.inline('html'));
+    }
+    
     var params = qs.parse(url.split('?')[1]);
     var list = glog.list({
         after: params.after,
@@ -41,6 +46,7 @@ var server = http.createServer(function (req, res) {
             res.end(JSON.stringify(files));
         });
     }
+    
     if (RegExp('^/posts/').test(req.url)) {
         var id = RegExp('^/posts/(.*)').exec(req.url)[1];
         if (archive[id]) {
@@ -51,11 +57,19 @@ var server = http.createServer(function (req, res) {
         }
     }
     
-    if (req.url.split('?')[0] === '/') {
+    if (RegExp('^/[^/.]*($|\\?)').test(req.url)) {
         res.setHeader('content-type', 'text/html');
-        var root = hyperstream({
-            '.articles': blogStream(req.url).pipe(renderArticles())
-        });
+        var summary = req.url.split('?')[0] === '/';
+        
+        var render = renderArticles({ summary: summary });
+        var root = trumpet();
+        blogStream(req.url).pipe(render)
+            .pipe(root.select('.articles').createWriteStream())
+        ;
+        if (!summary) {
+            root.select('.more').setAttribute('class', 'more hide');
+        }
+        
         var hs = hyperstream({ '#root': root });
         hs.pipe(res);
         fs.createReadStream(__dirname + '/static/index.html').pipe(hs);
