@@ -9,7 +9,6 @@ module.exports = function (opts) {
     return through(function (row) {
         this.queue(hyperglue(html, {
             '.article': opts.summary ? { 'class': 'article summary' } : {},
-            '.expand': opts.summary ? { href: row.href } : {},
             '.title a': {
                 _text: row.title,
                 href: row.href

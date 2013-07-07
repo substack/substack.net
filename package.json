@@ -2,7 +2,7 @@
   "name": "substack.net",
   "version": "0.0.3",
   "dependencies": {
-    "browserify": "~2.5.1",
+    "browserify": "~2.23.1",
     "brfs": "~0.0.2",
     "uglify-js": "~1.2.6",
     "hyperglue": "~1.2.0",
@@ -17,6 +17,8 @@
     "trumpet": "~1.4.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "browserify browser/main.js -o static/bundle.js",
+    "watch": "watchify browser/main.js -o static/bundle.js --debug -v"
   }
 }

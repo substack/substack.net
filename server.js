@@ -70,7 +70,7 @@ var server = http.createServer(function (req, res) {
             root.select('.more').setAttribute('class', 'more hide');
         }
         
-        var hs = hyperstream({ '#root': root });
+        var hs = hyperstream({ '#content': root });
         hs.pipe(res);
         fs.createReadStream(__dirname + '/static/index.html').pipe(hs);
         fs.createReadStream(__dirname + '/static/pages/root.html').pipe(root);
