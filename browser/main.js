@@ -8,20 +8,30 @@ avatar.addEventListener('mouseout', function (ev) {
     avatar.setAttribute('src', '/images/substack.png');
 });
 
-var summarized = document.querySelectorAll('#root .article.summary');
-for (var i = 0; i < summarized.length; i++) {
-console.log('i=' + i);
-    summarized[i].addEventListener('click', function onclick (ev) {
-console.log('CLICK');
-        ev.preventDefault();
-        this.removeEventListener('click', onclick);
-        classList(this).remove('summary');
-    });
-}
+var root = document.querySelector('#root');
 
-var moreArticles = document.querySelector('#root .more');
-if (moreArticles) {
+if (root) {
+    var render = require('../render/article.js')({ summary: true });
+    render.on('element', function (elem) {
+        if (!classList(elem).contains('summary')) return;
+        elem.addEventListener('click', function onclick (ev) {
+            ev.preventDefault();
+            this.removeEventListener('click', onclick);
+            classList(this).remove('summary');
+        });
+    });
+    render.appendTo('#root .articles');
     
+    var moreArticles = require('./more_articles.js');
+    var more = root.querySelector('.more');
+    
+    more.addEventListener('click', function (ev) {
+        var m = moreArticles(root)
+        m.pipe(render, { end: false });
+        m.on('no-more', function () {
+            classList(more).add('hide');
+        });
+    });
 }
 
 var art = document.querySelector('#art');

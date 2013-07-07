@@ -1,13 +1,12 @@
-var through = require('through');
+var hyperspace = require('hyperspace');
 var fs = require('fs');
-var hyperglue = require('hyperglue');
 var html = fs.readFileSync(__dirname + '/article.html');
 
 module.exports = function (opts) {
     if (!opts) opts = {};
     
-    return through(function (row) {
-        this.queue(hyperglue(html, {
+    return hyperspace(html, function (row) {
+        return {
             '.article': opts.summary ? { 'class': 'article summary' } : {},
             '.title a': {
                 _text: row.title,
@@ -17,6 +16,6 @@ module.exports = function (opts) {
             '.date': row.date,
             '.commit': row.commit,
             '.body': { _html: row.body }
-        }).outerHTML);
+        };
     });
 };

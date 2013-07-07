@@ -1,5 +1,4 @@
 var http = require('http');
-var hyperstream = require('hyperstream');
 var trumpet = require('trumpet');
 var qs = require('querystring');
 var fs = require('fs');
@@ -62,7 +61,12 @@ var server = http.createServer(function (req, res) {
         var summary = req.url.split('?')[0] === '/';
         
         var render = renderArticles({ summary: summary });
+        var index = trumpet();
+        index.pipe(res);
+        
         var root = trumpet();
+        root.pipe(index.select('#content').createWriteStream());
+        
         blogStream(req.url).pipe(render)
             .pipe(root.select('.articles').createWriteStream())
         ;
@@ -70,9 +74,7 @@ var server = http.createServer(function (req, res) {
             root.select('.more').setAttribute('class', 'more hide');
         }
         
-        var hs = hyperstream({ '#content': root });
-        hs.pipe(res);
-        fs.createReadStream(__dirname + '/static/index.html').pipe(hs);
+        fs.createReadStream(__dirname + '/static/index.html').pipe(index);
         fs.createReadStream(__dirname + '/static/pages/root.html').pipe(root);
         return;
     }
