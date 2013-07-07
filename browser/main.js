@@ -1,10 +1,4 @@
-var articles = require('./articles')();
-articles.appendTo('#root .articles');
-
-var art = require('./art')();
-art.appendTo('#art');
-
-var vis = require('./vis');
+var classList = require('class-list');
 
 var avatar = document.getElementById('avatar');
 avatar.addEventListener('mouseover', function (ev) {
@@ -14,56 +8,31 @@ avatar.addEventListener('mouseout', function (ev) {
     avatar.setAttribute('src', '/images/substack.png');
 });
 
-var pages = [].slice.call(document.querySelectorAll('.page'))
-    .reduce(function (acc, elem) {
-        acc[elem.getAttribute('id')] = elem;
-        return acc;
-    }, {})
-;
+var root = document.querySelector('#root');
 
-var singlePage = require('single-page');
-var showPage = singlePage(function (href) {
-    Object.keys(pages).forEach(function (key) {
-        vis.hide(pages[key]);
-    });
-    
-    var prev = document.querySelector('.section.active');
-    if (prev) prev.className = prev.className.replace(/\s*\bactive\b\s*/, '');
-    
-    var name = href.replace(/^\//, '');
-    
-    if (href === '/') {
-        vis.show(pages.root);
-        return articles.showAll();
-    }
-    
-    var section = document.querySelector('.section.' + name);
-    if (section) section.className += ' active';
-    
-    if (pages[name]) vis.show(pages[name])
-    else {
-        vis.show(pages.root);
-        articles.show(name);
-    }
-});
-
-var links = document.querySelectorAll('a[href]');
-for (var i = 0; i < links.length; i++) (function (link) {
-    var href = link.getAttribute('href');
-    if (RegExp('^/').test(href) && !/\.\w+$/.test(href)) {
-        link.addEventListener('click', function (ev) {
-            if (ev.ctrlKey) return;
+if (root) {
+    var render = require('../render/article.js')({ summary: true });
+    render.on('element', function (elem) {
+        if (!classList(elem).contains('summary')) return;
+        elem.addEventListener('click', function onclick (ev) {
             ev.preventDefault();
-            showPage(href);
+            this.removeEventListener('click', onclick);
+            classList(this).remove('summary');
         });
-    }
-})(links[i]);
-
-articles.on('link', function (link, href) {
-    link.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        showPage(href);
     });
-});
+    render.appendTo('#root .articles');
+    
+    var moreArticles = require('./more_articles.js');
+    var more = root.querySelector('.more');
+    
+    more.addEventListener('click', function (ev) {
+        var m = moreArticles(root)
+        m.pipe(render, { end: false });
+        m.on('no-more', function () {
+            classList(more).add('hide');
+        });
+    });
+}
 
-articles.on('show', showPage);
+var art = document.querySelector('#art');
+if (art) require('./art.js')().appendTo(art);
