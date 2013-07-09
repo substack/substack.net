@@ -87,11 +87,19 @@ var server = http.createServer(function (req, res) {
         var root = trumpet();
         root.pipe(index.select('#content').createWriteStream());
         
-        blogStream(req.url).pipe(render)
+        blogStream(req.url)
+            .pipe(through(function (row) {
+                if (tstream) tstream.end(row.title);
+                this.queue(row);
+            }))
+            .pipe(render)
             .pipe(root.select('.articles').createWriteStream())
         ;
+        
+        var tstream;
         if (!summary) {
             root.select('.more').setAttribute('class', 'more hide');
+            tstream = index.select('title').createWriteStream();
         }
         
         fs.createReadStream(__dirname + '/static/index.html').pipe(index);
