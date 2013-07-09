@@ -14,13 +14,45 @@ if (root) {
     var render = require('../render/article.js')({ summary: true });
     render.on('element', function (elem) {
         if (!classList(elem).contains('summary')) return;
+        
+        var link = elem.querySelector('.title a')
+        var href = link.getAttribute('href');
+        var title = link.textContent || link.innerText;
+         
         elem.addEventListener('click', function onclick (ev) {
             ev.preventDefault();
             this.removeEventListener('click', onclick);
             classList(this).remove('summary');
+            
+            var articles = root.querySelectorAll('.article');
+            for (var i = 0; i < articles.length; i++) {
+                if (articles[i] === elem) continue;
+                classList(articles[i]).add('hide');
+            }
+            
+            if (window.history && window.history.pushState) {
+                classList(more).remove('hide');
+                window.history.pushState(null, title, href);
+                window.scrollTo(0);
+            }
+            else location.href = href;
         });
     });
     render.appendTo('#root .articles');
+    
+    if (window.addEventListener) {
+        window.addEventListener('popstate', function (ev) {
+            if (location.pathname === '/') {
+                var articles = root.querySelectorAll('.article');
+                for (var i = 0; i < articles.length; i++) {
+                    var c = classList(articles[i]);
+                    c.add('summary');
+                    c.remove('hide');
+                    classList(more).remove('hide');
+                }
+            }
+        });
+    }
     
     var moreArticles = require('./more_articles.js');
     var more = root.querySelector('.more');
