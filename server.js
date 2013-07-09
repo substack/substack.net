@@ -14,8 +14,10 @@ var glog = require('glog')({
 });
 
 function blogStream (url) {
-    if (RegExp('^/[^/]+($|\\?)').test(url)) {
-        return glog.get(url).pipe(glog.inline('html'));
+    var u = url.split('?')[0];
+    
+    if (RegExp('^/[^/]+$').test(u)) {
+        return glog.get(u).pipe(glog.inline('html'));
     }
     
     var params = qs.parse(url.split('?')[1]);
