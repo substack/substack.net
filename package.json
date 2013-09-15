@@ -12,7 +12,8 @@
     "ecstatic": "~0.4.5",
     "glog": "~1.4.0",
     "trumpet": "~1.4.1",
-    "concat-stream": "~1.0.0"
+    "concat-stream": "~1.0.0",
+    "hacker-deps": "0.x.x"
   },
   "browserify": {
     "transform": [
@@ -20,9 +21,8 @@
     ]
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "hacker-deps -v > static/hackers.txt; node server.js",
     "postinstall": "browserify browser/main.js -o static/bundle.js",
     "watch": "watchify browser/main.js -o static/bundle.js --debug -v"
   }
 }
-
