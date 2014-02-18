@@ -23,6 +23,7 @@
   "scripts": {
     "start": "bin/start.sh",
     "postinstall": "browserify browser/main.js -o static/bundle.js",
-    "watch": "watchify browser/main.js -o static/bundle.js --debug -v"
+    "watch": "watchify browser/main.js -o static/bundle.js --debug -v",
+    "beep": "node beep.js"
   }
 }
