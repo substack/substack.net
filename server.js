@@ -106,7 +106,6 @@ var server = http.createServer(function (req, res) {
         fs.createReadStream(__dirname + '/static/pages/root.html').pipe(root);
         return;
     }
-    
     return staticd(req, res);
 });
 server.listen(process.env.PORT || Number(process.argv[3]));
