@@ -24,6 +24,7 @@
     "start": {
       "substack.net": "bin/start.sh"
     },
+    "preinstall": "(cp -r $PREV/node_modules .; exit 0)",
     "postinstall": "browserify browser/main.js -o static/bundle.js",
     "watch": "watchify browser/main.js -o static/bundle.js --debug -v",
     "beep": "node beep.js"
