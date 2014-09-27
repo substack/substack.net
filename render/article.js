@@ -1,6 +1,6 @@
 var hyperspace = require('hyperspace');
 var fs = require('fs');
-var html = fs.readFileSync(__dirname + '/article.html');
+var html = fs.readFileSync(__dirname + '/article.html', 'utf8');
 
 module.exports = function (opts) {
     if (!opts) opts = {};
