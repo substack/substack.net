@@ -2,18 +2,19 @@
   "name": "substack.net",
   "version": "0.0.3",
   "dependencies": {
-    "browserify": "^5.12.1",
     "brfs": "^1.2.0",
-    "deck": "~0.0.4",
+    "browserify": "^5.12.1",
     "class-list": "~0.1.1",
+    "concat-stream": "^1.4.6",
+    "deck": "~0.0.4",
+    "ecstatic": "~0.5.4",
+    "glog": "^1.4.0",
+    "hacker-deps": "0.x.x",
     "hyperquest": "~0.1.6",
     "hyperspace": "^2.1.1",
     "through": "^2.3.4",
-    "ecstatic": "~0.5.4",
-    "glog": "^1.4.0",
     "trumpet": "^1.7.0",
-    "concat-stream": "^1.4.6",
-    "hacker-deps": "0.x.x"
+    "uglify-js": "^2.4.15"
   },
   "browserify": {
     "transform": [
@@ -25,7 +26,7 @@
       "substack.net": "bin/start.sh"
     },
     "preinstall": "(cp -r $PREV/node_modules .; exit 0)",
-    "postinstall": "browserify browser/main.js -o static/bundle.js",
+    "postinstall": "browserify browser/main.js | uglifyjs > static/bundle.js",
     "watch": "watchify browser/main.js -o static/bundle.js --debug -v",
     "beep": "node beep.js"
   }
