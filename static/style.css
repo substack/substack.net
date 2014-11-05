@@ -530,3 +530,8 @@ a:link img, a:visited img {
     display: none;
 }
 
+#footer a:link,
+#footer a:visited {
+    color: rgb(190,142,102);
+    font-size: 24pt;
+}
