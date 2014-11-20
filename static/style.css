@@ -80,7 +80,7 @@ a:link img, a:visited img {
 }
 
 #banner {
-    width: 700px;
+    width: 670px;
     margin: auto;
     background-color: rgb(92,62,37);
     color: rgb(190,142,102);
@@ -88,24 +88,22 @@ a:link img, a:visited img {
     top: -20px;
     margin-bottom: -25px;
     margin-top: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
 }
 
 #banner:hover {
     cursor: pointer;
-    color: rgb(190,190,220);
+    background-color: white;
 }
 
 #banner::before {
     content: '';
     width: 0px;
     height: 0px;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid rgb(50,30,21);
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgb(50,30,21);
     position: absolute;
     top: 0px;
     right: 0px;
@@ -115,8 +113,8 @@ a:link img, a:visited img {
     content: '';
     width: 0px;
     height: 0px;
-    border-top: 20px solid transparent;
-    border-left: 20px solid rgb(50,30,21);
+    border-top: 10px solid transparent;
+    border-left: 10px solid rgb(50,30,21);
     position: absolute;
     bottom: 0px;
     left: 0px;
