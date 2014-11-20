@@ -9,7 +9,7 @@
     "concat-stream": "^1.4.6",
     "deck": "~0.0.4",
     "ecstatic": "~0.5.4",
-    "glog": "^1.4.0",
+    "glog": "^1.5.0",
     "hacker-deps": "0.x.x",
     "hyperquest": "~0.1.6",
     "hyperspace": "^2.1.1",
