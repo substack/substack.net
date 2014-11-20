@@ -93,9 +93,13 @@ a:link img, a:visited img {
     text-align: center;
 }
 
+#banner a:link, #banner a:visited {
+    text-decoration: none;
+}
+
 #banner:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: black;
 }
 
 #banner::before {

@@ -70,7 +70,7 @@ if (root) {
 var art = document.querySelector('#art');
 if (art) require('./art.js')().appendTo(art);
 
-var banner = document.querySelector('#banner');
+var banner = document.querySelector('#banner a');
 if (banner) (function () {
     var chars = String(banner.textContent || '').split('');
     banner.textContent = '';
@@ -98,7 +98,6 @@ if (banner) (function () {
             ]));
         }
     }
-    console.log(colorx);
     
     setInterval(function () {
         for (var i = 0; i < elems.length; i++) {
