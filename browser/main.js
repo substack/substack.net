@@ -68,3 +68,26 @@ if (root) {
 
 var art = document.querySelector('#art');
 if (art) require('./art.js')().appendTo(art);
+
+var banner = document.querySelector('#banner');
+if (banner) (function () {
+    var chars = String(banner.textContent || '').split('');
+    banner.textContent = '';
+    var elems = [];
+    for (var i = 0; i < chars.length; i++) {
+        var span = document.createElement('span');
+        span.textContent = chars[i];
+        elems.push(span);
+        banner.appendChild(span);
+    }
+    
+    var offset = 0;
+    var colors = [ 'cyan', 'orange', 'magenta', 'gold' ];
+    
+    setInterval(function () {
+        for (var i = 0; i < elems.length; i++) {
+            elems[i].style.color = colors[Math.abs(i - offset) % colors.length];
+        }
+        offset ++;
+    }, 50);
+})();

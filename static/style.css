@@ -28,7 +28,6 @@ a:link img, a:visited img {
     width: 800px;
     height: 192px;
     padding-bottom: 5px;
-    border-bottom: 8px solid rgb(92,62,37) ;
 }
 
 #logo #avatar {
@@ -80,17 +79,50 @@ a:link img, a:visited img {
     border-top: 8px solid rgb(92,62,37);
 }
 
-#startup-banner {
-    width: 740px;
+#banner {
+    width: 700px;
     margin: auto;
+    background-color: rgb(92,62,37);
     color: rgb(190,142,102);
     position: relative;
     top: -20px;
     margin-bottom: -25px;
+    margin-top: 25px;
+    padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 
-#startup-banner .desc {
+#banner:hover {
+    cursor: pointer;
+    color: rgb(190,190,220);
+}
+
+#banner::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid rgb(50,30,21);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#banner::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-left: 20px solid rgb(50,30,21);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#banner .desc {
     display: inline-block;
     width: 310px;
     vertical-align: top;
@@ -98,16 +130,16 @@ a:link img, a:visited img {
     margin-left: 10px;
 }
 
-#startup-banner img {
+#banner img {
     margin-top: -10px;
 }
 
-#startup-banner a:link,
-#startup-banner a:visited {
+#banner a:link,
+#banner a:visited {
     color: rgb(190,190,220);
 }
 
-#startup-banner a:hover {
+#banner a:hover {
     color: rgb(130,130,250);
 }
 
@@ -418,7 +450,7 @@ a:link img, a:visited img {
 #root .article .title {
     background-color: rgb(240,30,30);
     color: white;
-    font-size: 1.5em;
+    font-size: 24px;
     padding: 5px;
     padding-left: 15px;
     margin-right: 40px;
