@@ -13,11 +13,11 @@ var glog = require('glog')({
     title: "substack in cyberspace"
 });
 
-function blogStream (url) {
+function blogStream (url, cb) {
     var u = url.split('?')[0];
     
     if (RegExp('^/[^/]+$').test(u)) {
-        return glog.get(u).pipe(glog.inline('html'));
+        return glog.get(u, cb).pipe(glog.inline('html'));
     }
     
     var params = qs.parse(url.split('?')[1]);
@@ -87,7 +87,7 @@ var server = http.createServer(function (req, res) {
         var root = trumpet();
         root.pipe(index.select('#content').createWriteStream());
         
-        blogStream(req.url)
+        blogStream(req.url, ontags)
             .pipe(through.obj(function (row, enc, next) {
                 if (tstream) tstream.end(row.title);
                 this.push(row);
@@ -96,6 +96,11 @@ var server = http.createServer(function (req, res) {
             .pipe(render)
             .pipe(root.select('.articles').createWriteStream())
         ;
+        function ontags (err, tags) {
+            if (tstream && tags && tags.length === 0) {
+                tstream.end();
+            }
+        }
         
         var tstream;
         if (!summary) {
