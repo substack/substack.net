@@ -5,7 +5,7 @@ var fs = require('fs');
 var path = require('path');
 var archive = require('./archive.json');
 var renderArticles = require('./render/article.js');
-var through = require('through');
+var through = require('through2');
 
 var glog = require('glog')({
     repodir: process.argv[2] || process.env.HOME + '/data',
@@ -88,9 +88,10 @@ var server = http.createServer(function (req, res) {
         root.pipe(index.select('#content').createWriteStream());
         
         blogStream(req.url)
-            .pipe(through(function (row) {
+            .pipe(through.obj(function (row, enc, next) {
                 if (tstream) tstream.end(row.title);
-                this.queue(row);
+                this.push(row);
+                next();
             }))
             .pipe(render)
             .pipe(root.select('.articles').createWriteStream())
@@ -111,7 +112,8 @@ var server = http.createServer(function (req, res) {
 server.listen(process.env.PORT || Number(process.argv[3]));
 
 function dropEmpty () {
-    return through(function (buf) {
-        if (buf.length > 0) this.queue(buf);
+    return through(function (buf, enc, next) {
+        if (buf.length > 0) this.push(buf);
+        next();
     });
 }

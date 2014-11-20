@@ -13,7 +13,7 @@
     "hacker-deps": "0.x.x",
     "hyperquest": "~0.1.6",
     "hyperspace": "^2.1.1",
-    "through": "^2.3.4",
+    "through2": "^0.6.3",
     "trumpet": "^1.7.0",
     "uglify-js": "^2.4.15"
   },
