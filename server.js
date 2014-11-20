@@ -62,7 +62,7 @@ var server = http.createServer(function (req, res) {
     var page = req.url.split('?')[0].split('/')[1];
     
     if (page === 'art' || page === 'mad-science' || page === 'music'
-    || page === 'code' || page === 'me') {
+    || page === 'code' || page === 'me' || page === 'hire') {
         var index = trumpet();
         var art = index.select('#content').createWriteStream();
         var file = path.join(
