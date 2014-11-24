@@ -1,4 +1,4 @@
-var hyperquest = require('hyperquest');
+var xhr = require('xhr');
 var shuffle = require('deck').shuffle;
 
 module.exports = function () { return new Art };
@@ -63,11 +63,11 @@ Art.prototype.render = function (src) {
 };
 
 function loadImages (cb) {
-    var r = hyperquest('http://' + window.location.host + '/images.json');
-    
-    var data = '';
-    r.on('data', function (buf) { data += buf });
-    r.on('end', function () {
+    var u = 'http://' + window.location.host + '/images.json';
+    xhr(u, function (err, res, body) {
+        if (err || !/^2/.test(res.statusCode)) return;
+        var data = body.toString('utf8');
+        
         self.images = shuffle(JSON.parse(data)).filter(function (file) {
             return /\.(png|jpg)$/.test(file);
         });

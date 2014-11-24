@@ -6,16 +6,15 @@
     "browserify": "^5.12.1",
     "class-list": "~0.1.1",
     "colornames": "~0.0.2",
-    "concat-stream": "^1.4.6",
     "deck": "~0.0.4",
     "ecstatic": "~0.5.4",
     "glog": "^1.6.0",
     "hacker-deps": "0.x.x",
-    "hyperquest": "~0.1.6",
     "hyperspace": "^2.1.1",
     "through2": "^0.6.3",
     "trumpet": "^1.7.0",
-    "uglify-js": "^2.4.15"
+    "uglify-js": "^2.4.15",
+    "xhr": "^1.17.0"
   },
   "browserify": {
     "transform": [

@@ -1,8 +1,7 @@
-var hyperquest = require('hyperquest');
-var through = require('through');
-var concat = require('concat-stream');
 var url = require('url');
 var qs = require('querystring');
+var xhr = require('xhr');
+var through = require('through2');
 
 module.exports = function (target) {
     var commit = target.querySelector('.article:last-child .commit');
@@ -12,17 +11,19 @@ module.exports = function (target) {
         inline: 'html'
     }));
     
-    var output = through();
-    hyperquest(u).pipe(concat(function (body) {
-        var rows = JSON.parse(body);
+    var output = through.obj();
+    xhr(u, function (err, res, body) {
+        if (err || !/^2/.test(res.status)) return;
+        
+        var rows = JSON.parse(body.toString('utf8'));
         for (var i = 0; i < rows.length; i++) {
-            output.queue(rows[i]);
+            output.push(rows[i]);
         }
-        output.queue(null);
+        output.push(null);
         
         if (rows.length < 5) {
             output.emit('no-more');
         }
-    }));
+    });
     return output;
 };
