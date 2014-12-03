@@ -38,7 +38,9 @@ var staticd = ecstatic({
 var scratch = ecstatic('/scratch');
 
 var server = http.createServer(function (req, res) {
-    if (req.host.split('.')[0] === 'scratch') return scratch(req, res);
+    if ((req.headers.host || '').split('.')[0] === 'scratch') {
+        return scratch(req, res);
+    }
     if (glog.test(req.url)) return glog(req, res);
     
     if (req.url === '/images.json') {
