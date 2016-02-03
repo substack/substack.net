@@ -70,8 +70,8 @@ if (root) {
 var art = document.querySelector('#art');
 if (art) require('./art.js')().appendTo(art);
 
-var banner = document.querySelector('#banner a');
-if (banner) (function () {
+var banners = document.querySelectorAll('#banner a');
+banners.forEach(function (banner) {
     var chars = String(banner.textContent || '').split('');
     banner.textContent = '';
     var elems = [];
@@ -106,7 +106,7 @@ if (banner) (function () {
         }
         offset ++;
     }, 50);
-})();
+});
 
 function phex (s) {
     return s.slice(1).split(/(\w\w)/).filter(Boolean)
