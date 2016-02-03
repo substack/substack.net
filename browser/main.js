@@ -71,7 +71,7 @@ var art = document.querySelector('#art');
 if (art) require('./art.js')().appendTo(art);
 
 var banners = document.querySelectorAll('#banner a');
-banners.forEach(function (banner) {
+[].slice.call(banners).forEach(function (banner) {
     var chars = String(banner.textContent || '').split('');
     banner.textContent = '';
     var elems = [];
